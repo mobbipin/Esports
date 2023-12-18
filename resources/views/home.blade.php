@@ -70,11 +70,11 @@
                     <div class="container-fluid">
                         <div class="primary-menu">
                             <div class="site-branding">
-                                <a href="index.html" class="brand-logo"><img src="assets/images/logo/logo-1.png" alt="Site Logo"></a>
+                                <a href="" class="brand-logo"><img src="assets/images/logo/LOGO1.png" alt="Site Logo"></a>
                                 <div class="lang-dropdown">
                                     <select class="wide">
                                         <option value="01">English</option>
-                                        <option value="02">French</option>
+                        
                                     </select>
                                 </div>
                             </div>
@@ -100,12 +100,26 @@
                                         <li class="menu-item"><a href="#testimonial" class="page-scroll nav-link">Testimonial</a></li>
                                         <li class="menu-item"><a href="#pricing" class="page-scroll nav-link">pricing</a></li>
                                         <li class="menu-item"><a href="#blog" class="page-scroll nav-link">Blog</a></li>
+										@if (Route::has('login'))
+                <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right z-10">
+                    @auth
+                        <a href="{{ url('/dashboard') }}" class="font-semibold text-gray-600 hover:text-gray-900 focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Dashboard</a>
+                    @else
+                        <li><a href="{{ route('login') }}" class="font-semibold text-gray-600 hover:text-gray-900 focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Log in</a></li>
+
+                        @if (Route::has('register'))
+                            <li><a href="{{ route('register') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Register</a></li>
+                        @endif
+                    @endauth
+                    
+                </div>
+            @endif
                                     </ul>
                                 </nav>
                             </div>
                             <div class="header-right-nav">
                                 <ul>
-                                    <li class="nav-button"><a href="contact.html" class="main-btn arrow-btn">Let’s Talk</a></li>
+                                    <li class="nav-button"><a href="" class="main-btn arrow-btn">Let’s Talk</a></li>
                                     <li class="bar-item"><img src="assets/images/bar.png" alt=""></li>
                                     <li class="navbar-toggle-btn">
                                         <div class="navbar-toggler">
