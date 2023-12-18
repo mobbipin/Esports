@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\TournamentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,6 +21,7 @@ Route::get('/dashboardesports', [HomeController::class, 'index1']);
 
 
 
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
@@ -29,3 +31,15 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+// routes/web.php
+Route::get('/create-tournament', function () {
+    return view('tournament'); // Assuming your view file is named 'tournament.blade.php'
+});
+
+// Route to load previous tournaments
+Route::get('/load-tournaments', [TournamentController::class, 'loadPreviousTournaments']);
+
+// Route to save a new tournament
+Route::post('/save-tournament', [TournamentController::class, 'saveTournament']);
+

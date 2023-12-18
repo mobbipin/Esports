@@ -17,7 +17,7 @@
         <!--====== Responsive css ======-->
         <link rel="stylesheet" href="assets/css/responsive.css">
     </head>
-    <body data-spy="scroll" data-target=".main-menu">
+    <body>
         <div class="home-v3-wrapper">
             <!--====== Start Preloader ======-->
             <div class="preloader">
@@ -93,13 +93,50 @@
                                 <!-- Main Menu -->
                                 <nav class="main-menu">
                                     <ul>
-                                        <li class="menu-item"><a href="#home" class="page-scroll active nav-link">Home</a></li>
-                                        <li class="menu-item"><a href="#services" class="page-scroll nav-link">Services</a></li>
-                                        <li class="menu-item"><a href="#about" class="page-scroll nav-link">About</a></li>
-                                        <li class="menu-item"><a href="#portfolio" class="page-scroll nav-link">Portfolio</a></li>
-                                        <li class="menu-item"><a href="#testimonial" class="page-scroll nav-link">Testimonial</a></li>
-                                        <li class="menu-item"><a href="#pricing" class="page-scroll nav-link">pricing</a></li>
-                                        <li class="menu-item"><a href="#blog" class="page-scroll nav-link">Blog</a></li>
+                                        <li class="menu-item has-children"><a href="#" class="active nav-link">Demos</a>
+                                            <ul class="sub-menu">
+                                                <li class="has-children"><a href="#">Multipage</a>
+                                                    <ul class="sub-menu">
+                                                        <li><a href="index.html">Creative Agency</a></li>
+                                                        <li><a href="index-2.html">Digital Agency</a></li>
+                                                        <li><a href="index-3.html">Design Studio</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="has-children"><a href="#">Onepage</a>
+                                                    <ul class="sub-menu">
+                                                        <li><a href="onepage-index-1.html">Creative Agency</a></li>
+                                                        <li><a href="onepage-index-2.html">Digital Agency</a></li>
+                                                        <li><a href="onepage-index-3.html">Design Studio</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item has-children"><a href="#" class="nav-link">Services</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="services.html">Our Service</a></li>
+                                                <li><a href="service-details.html">Service Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item has-children"><a href="#" class="nav-link">Portfolio</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="projects.html">Our Portfolio</a></li>
+                                                <li><a href="project-details.html">Portfolio Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item has-children"><a href="#" class="nav-link">Pages</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="about.html">About Us</a></li>
+                                                <li><a href="team.html">Our Team</a></li>
+                                                <li><a href="team-details.html">Team Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item has-children"><a href="#" class="nav-link">Blog</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="blogs.html">Our Blog</a></li>
+                                                <li><a href="blog-details.html">Blog Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item"><a href="contact.html" class="nav-link">Contact</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -121,7 +158,7 @@
                 </div>
             </header><!--====== End Header Section ======-->
             <!--====== Start Hero Section ======-->
-            <section class="hero-banner-v3 dark-blue-bg position-relative z-1" id="home">
+            <section class="hero-banner-v3 dark-blue-bg position-relative z-1">
                 <div class="hero-pattern bg_cover" style="background-image: url(assets/images/hero/hero-pattern.png);"></div>
                 <div class="shape shape-one scene"><span data-depth="1"><img src="assets/images/shape/shape-15.png" alt=""></span></div>
                 <div class="shape shape-two scene"><span data-depth="1.2"><img src="assets/images/shape/shape-17.png" alt=""></span></div>
@@ -151,7 +188,7 @@
                 </div>
             </section><!--====== End Hero Section ======-->
             <!--====== Start Service Section ======-->
-            <section class="service-area service-area-v2" id="services">
+            <section class="service-area service-area-v2">
                 <div class="container-1350">
                     <div class="service-wrapper light-gray-bg">
                         <div class="row">
@@ -232,7 +269,7 @@
                 </div>
             </section><!--====== End Service Section ======-->
             <!--====== Start About Section ======-->
-            <section class="about-area about-area-v4 pt-130 pb-80" id="about">
+            <section class="about-area about-area-v4 pt-130 pb-80">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6">
@@ -341,7 +378,7 @@
                 </div>
             </section><!--====== End Partners Section ======-->
             <!--====== Start Portfolio Section ======-->
-            <section class="portfolio-area masonry-portfolio pt-120 pb-130" id="portfolio">
+            <section class="portfolio-area masonry-portfolio pt-120 pb-130">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
@@ -505,7 +542,7 @@
                 </div>
             </section><!--====== End Counter Section ======-->
             <!--====== Start Testimonial Section ======-->
-            <section class="testimonial-area testimonial-area-v4 pt-120" id="testimonial">
+            <section class="testimonial-area testimonial-area-v4 pt-120">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-7">
@@ -596,7 +633,7 @@
                 </div>
             </section><!--====== End Testimonial Section ======-->
             <!--====== Start Pricing Section ======-->
-            <section class="pricing-area pricing-area-v3 dark-blue-bg position-relative z-1 pt-120 pb-90" id="pricing">
+            <section class="pricing-area pricing-area-v3 dark-blue-bg position-relative z-1 pt-120 pb-90">
                 <div class="shape shape-one"><span><img src="assets/images/shape/pattern-shape-2.png" alt=""></span></div>
                 <div class="shape shape-two scene"><span data-depth=".2"><img src="assets/images/shape/line-2.png" alt=""></span></div>
                 <div class="shape shape-three scene"><span data-depth=".3"><img src="assets/images/shape/line-3.png" alt=""></span></div>
@@ -743,7 +780,7 @@
                 </div>
             </section><!--====== End Pricing Section ======-->
             <!--====== Start Blog Section ======-->
-            <section class="blog-area-v3 pt-120 pb-90" id="blog">
+            <section class="blog-area-v3 pt-120 pb-90">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-6">
