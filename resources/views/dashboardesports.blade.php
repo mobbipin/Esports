@@ -1,3 +1,7 @@
+<x-app-layout>
+
+
+
 <!doctype html>
 <html class="no-js" lang="en">
 
@@ -268,3 +272,5 @@
 </body>
 
 </html>
+
+	</x-app-layout>
