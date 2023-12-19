@@ -60,7 +60,11 @@ return [
     'features' => [
         // Features::termsAndPrivacyPolicy(),
         // Features::profilePhotos(),
+<<<<<<< HEAD
         Features::api(),
+=======
+        // Features::api(),
+>>>>>>> MANISH
         // Features::teams(['invitations' => true]),
         Features::accountDeletion(),
     ],
