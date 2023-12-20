@@ -62,7 +62,6 @@
                     <button type="submit">Save Tournament</button>
                 </form>
             </div>
-            
         </form>
     </div>
 </div>

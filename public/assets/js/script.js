@@ -38,3 +38,19 @@ $(document).ready(function() {
         saveTournament();
     });
 });
+
+// tournament-script.js
+
+function initializeTournamentPage() {
+    function showPage(page) {
+        // Add logic to show the corresponding page content
+        console.log(`Switching to ${page} page.`);
+        // You can use AJAX or other methods to load dynamic content based on the button clicked.
+    }
+
+    // You can add more specific JavaScript functionality for the tournament page here
+}
+
+// Call the function to initialize the tournament page
+initializeTournamentPage();
+

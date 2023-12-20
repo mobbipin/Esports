@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\TournamentController;
+use App\Http\Controllers\InfotournaController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -42,4 +44,7 @@ Route::get('/load-tournaments', [TournamentController::class, 'loadPreviousTourn
 
 // Route to save a new tournament
 Route::post('/save-tournament', [TournamentController::class, 'saveTournament']);
+
+// Route to info tournament
+Route:: view("/infotourna",'infotourna');
 
