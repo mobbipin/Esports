@@ -224,7 +224,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="footer-bottom-content text-center">
-                            <p>&copy;2023 <a href="/views/hello.html">MOB CREATIVES</a> CREATED FOR KNOWLEDGE AND SALES PURPOSE </p>
+                            <p>&copy;2023 <a href="https://gadgets.mobcr3atives.com/">MOB GADGETS</a> GET PREMIUM GADGETS HERE </p>
                         </div>
                     </div>
                 </div>
