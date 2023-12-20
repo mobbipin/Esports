@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 <x-app-layout>
 
 
@@ -276,4 +274,3 @@
 </html>
 
 	</x-app-layout>
->>>>>>> e2292268f8fa6ff4a0940722c6a646267ec8a84d
