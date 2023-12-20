@@ -32,33 +32,10 @@
                 <div class="panel-overlay"></div>
                 <div class="offcanvas-panel-inner">
                     <div class="panel-logo">
-                        <a href="index.html"><img src="assets/images/logo/LOGO1.png" alt="Qempo"></a>
+                        <img src="assets/images/logo/LOGO1.png" alt="Qempo">
                     </div>
-                    <div class="about-us">
-                        <h5 class="panel-widget-title">About Us</h5>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore ipsam alias quae cupiditate quas, neque eum magni impedit asperiores.
-                        </p>
-                    </div>
-                    <div class="contact-us">
-                        <h5 class="panel-widget-title">Contact Us</h5>
-                        <ul>
-                            <li>
-                                <i class="fal fa-map-marker-alt"></i>
-                                121 King St, Melbourne VIC 3000, Australia.
-                            </li>
-                            <li>
-                                <i class="fal fa-envelope-open"></i>
-                                <a href="mailto:hello@barky.com"> hello@barky.com</a>
-                                <a href="mailto:info@barky.com">info@barky.com</a>
-                            </li>
-                            <li>
-                                <i class="fal fa-phone"></i>
-                                <a href="tel:(312)-895-9800">(312) 895-9800</a>
-                                <a href="tel:(312)-895-9888">(312) 895-9888</a>
-                            </li>
-                        </ul>
-                    </div>
+                    
+                    
                     <a href="#" class="panel-close"><i class="fal fa-times"></i></a>
                 </div>
             </div><!--====== offcanvas-panel ======-->
@@ -80,16 +57,7 @@
                             </div>
                             <div class="nav-menu nav-ml-auto">
                                 <!-- Navbar Close -->
-                                <div class="navbar-close"><i class="far fa-times"></i></div>
-                                <!-- Nav Search -->
-                                <div class="nav-search">
-                                    <form>
-                                        <div class="form_group">
-                                            <input type="email" class="form_control" placeholder="Search Here" name="email" required>
-                                            <button class="search-btn"><i class="fas fa-search"></i></button>
-                                        </div>
-                                    </form>
-                                </div>
+                                
                                 <!-- Main Menu -->
                                 <nav class="main-menu">
                                     <ul>
@@ -134,7 +102,7 @@
                     <div class="row align-items-center">
                         <div class="col-lg-6">
                             <div class="hero-content">
-                                <a href="https://www.youtube.com/watch?v=AT6oSIDbGkw" class="video-popup wow fadeInUp" data-wow-delay=".3s"><i class="fas fa-play"></i></a>
+                               <!-- <a href="https://www.youtube.com/watch?v=AT6oSIDbGkw" class="video-popup wow fadeInUp" data-wow-delay=".3s"><i class="fas fa-play"></i></a> -->
                                 <h1 class="wow fadeInUp" data-wow-delay=".5s">Seamless Esports Management, Unleashing Unmatched Performance for Every Game.</h1>
                                 <p class="wow fadeInUp" data-wow-delay=".6s">Redefining Esports Excellence: Where Every Game Is a Masterpiece, Every Broadcast Is Unforgettable.</p>
                                 
