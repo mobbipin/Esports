@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+<x-app-layout>
+
+
+
 <!doctype html>
 <html class="no-js" lang="en">
 
@@ -268,3 +274,6 @@
 </body>
 
 </html>
+
+	</x-app-layout>
+>>>>>>> e2292268f8fa6ff4a0940722c6a646267ec8a84d
