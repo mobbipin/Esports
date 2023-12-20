@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4f499bec682a7810cc33bd1c3843743a",
+    "content-hash": "6960be0e8ab5b1265bf13f9dc5f1de12",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -1417,16 +1417,16 @@
         },
         {
             "name": "laravel/jetstream",
-            "version": "v4.1.2",
+            "version": "v4.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/jetstream.git",
-                "reference": "252348e46521920ff515f41faa110e28630075f8"
+                "reference": "cdf9bf4ae3d51d9a08a2217becc6c7f3516cff6d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/jetstream/zipball/252348e46521920ff515f41faa110e28630075f8",
-                "reference": "252348e46521920ff515f41faa110e28630075f8",
+                "url": "https://api.github.com/repos/laravel/jetstream/zipball/cdf9bf4ae3d51d9a08a2217becc6c7f3516cff6d",
+                "reference": "cdf9bf4ae3d51d9a08a2217becc6c7f3516cff6d",
                 "shasum": ""
             },
             "require": {
@@ -1482,7 +1482,7 @@
                 "issues": "https://github.com/laravel/jetstream/issues",
                 "source": "https://github.com/laravel/jetstream"
             },
-            "time": "2023-11-29T15:58:23+00:00"
+            "time": "2023-12-19T14:43:51+00:00"
         },
         {
             "name": "laravel/prompts",
