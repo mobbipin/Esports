@@ -30,7 +30,6 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
-<<<<<<< HEAD
 
 // routes/web.php
 Route::get('/create-tournament', function () {
@@ -43,5 +42,3 @@ Route::get('/load-tournaments', [TournamentController::class, 'loadPreviousTourn
 // Route to save a new tournament
 Route::post('/save-tournament', [TournamentController::class, 'saveTournament']);
 
-=======
->>>>>>> MANISH
