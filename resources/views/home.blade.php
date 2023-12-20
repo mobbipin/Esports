@@ -7,9 +7,9 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!--====== Title ======-->
-        <title>Pixlab - Creative Agency HTML Template</title>
+        <title>MOB Creatives - Broadcasting and Production</title>
         <!--====== Favicon Icon ======-->
-        <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/png">
+        <link rel="shortcut icon" href="assets/images/Logo1" type="image/png">
         <!--====== Default css ======-->
         <link rel="stylesheet" href="assets/css/default.css">
         <!--====== Style css ======-->
@@ -32,33 +32,10 @@
                 <div class="panel-overlay"></div>
                 <div class="offcanvas-panel-inner">
                     <div class="panel-logo">
-                        <a href="index.html"><img src="assets/images/logo/logo-1.png" alt="Qempo"></a>
+                        <img src="assets/images/logo/LOGO1.png" alt="Qempo">
                     </div>
-                    <div class="about-us">
-                        <h5 class="panel-widget-title">About Us</h5>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore ipsam alias quae cupiditate quas, neque eum magni impedit asperiores.
-                        </p>
-                    </div>
-                    <div class="contact-us">
-                        <h5 class="panel-widget-title">Contact Us</h5>
-                        <ul>
-                            <li>
-                                <i class="fal fa-map-marker-alt"></i>
-                                121 King St, Melbourne VIC 3000, Australia.
-                            </li>
-                            <li>
-                                <i class="fal fa-envelope-open"></i>
-                                <a href="mailto:hello@barky.com"> hello@barky.com</a>
-                                <a href="mailto:info@barky.com">info@barky.com</a>
-                            </li>
-                            <li>
-                                <i class="fal fa-phone"></i>
-                                <a href="tel:(312)-895-9800">(312) 895-9800</a>
-                                <a href="tel:(312)-895-9888">(312) 895-9888</a>
-                            </li>
-                        </ul>
-                    </div>
+                    
+                    
                     <a href="#" class="panel-close"><i class="fal fa-times"></i></a>
                 </div>
             </div><!--====== offcanvas-panel ======-->
@@ -80,26 +57,17 @@
                             </div>
                             <div class="nav-menu nav-ml-auto">
                                 <!-- Navbar Close -->
-                                <div class="navbar-close"><i class="far fa-times"></i></div>
-                                <!-- Nav Search -->
-                                <div class="nav-search">
-                                    <form>
-                                        <div class="form_group">
-                                            <input type="email" class="form_control" placeholder="Search Here" name="email" required>
-                                            <button class="search-btn"><i class="fas fa-search"></i></button>
-                                        </div>
-                                    </form>
-                                </div>
+                                
                                 <!-- Main Menu -->
                                 <nav class="main-menu">
                                     <ul>
                                         <li class="menu-item"><a href="#home" class="page-scroll active nav-link">Home</a></li>
                                         <li class="menu-item"><a href="#services" class="page-scroll nav-link">Services</a></li>
                                         <li class="menu-item"><a href="#about" class="page-scroll nav-link">About</a></li>
-                                        <li class="menu-item"><a href="#portfolio" class="page-scroll nav-link">Portfolio</a></li>
-                                        <li class="menu-item"><a href="#testimonial" class="page-scroll nav-link">Testimonial</a></li>
+                                        <li class="menu-item"><a href="#portfolio" class="page-scroll nav-link">Features</a></li>
+                                
                                         <li class="menu-item"><a href="#pricing" class="page-scroll nav-link">pricing</a></li>
-                                        <li class="menu-item"><a href="#blog" class="page-scroll nav-link">Blog</a></li>
+                                        <li class="menu-item"><a href="#blog" class="page-scroll nav-link">API</a></li>
 										@if (Route::has('login'))
                 <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right z-10">
                     @auth
@@ -116,20 +84,7 @@
             @endif
                                     </ul>
                                 </nav>
-                            </div>
-                            <div class="header-right-nav">
-                                <ul>
-                                    <li class="nav-button"><a href="" class="main-btn arrow-btn">Let’s Talk</a></li>
-                                    <li class="bar-item"><img src="assets/images/bar.png" alt=""></li>
-                                    <li class="navbar-toggle-btn">
-                                        <div class="navbar-toggler">
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -147,18 +102,16 @@
                     <div class="row align-items-center">
                         <div class="col-lg-6">
                             <div class="hero-content">
-                                <a href="https://www.youtube.com/watch?v=AT6oSIDbGkw" class="video-popup wow fadeInUp" data-wow-delay=".3s"><i class="fas fa-play"></i></a>
-                                <h1 class="wow fadeInUp" data-wow-delay=".5s">We’re Digital Web 
-                                    Design Agency</h1>
-                                <p class="wow fadeInUp" data-wow-delay=".6s">Sed ut perspiciatis unde omnis iste natus error siluptatem accu
-                                    santium doloremque laudantium totam rem</p>
+                               <!-- <a href="https://www.youtube.com/watch?v=AT6oSIDbGkw" class="video-popup wow fadeInUp" data-wow-delay=".3s"><i class="fas fa-play"></i></a> -->
+                                <h1 class="wow fadeInUp" data-wow-delay=".5s">Seamless Esports Management, Unleashing Unmatched Performance for Every Game.</h1>
+                                <p class="wow fadeInUp" data-wow-delay=".6s">Redefining Esports Excellence: Where Every Game Is a Masterpiece, Every Broadcast Is Unforgettable.</p>
                                 
-                                <a href="services.html" class="main-btn bordered-btn btn-white arrow-btn wow fadeInUp" data-wow-delay=".7s">View Services</a>
+                                
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="hero-img wow fadeInRight" data-wow-delay=".5s">
-                                <img src="assets/images/hero/hero-two-img-1.png" alt="">
+                                <img src="assets/images/hero/a2.jpg" alt="Image">
                             </div>
                         </div>
                     </div>
@@ -172,75 +125,40 @@
                             <div class="col-lg-4 col-md-6 col-sm-12">
                                 <div class="service-item service-style-three mb-30 wow fadeInUp" data-wow-delay=".15s">
                                     <div class="icon">
-                                        <img src="assets/images/icon/icon-1.png" alt="">
+                                        <img src="assets/images/icon/LiveEvent.png" alt="">
                                     </div>
                                     <div class="text">
-                                        <h3 class="title"><a href="service-details.html">Creative Design</a></h3>
-                                        <p>Sed ut perspiciatis unde omnisy natus error volupt cusantium</p>
-                                        <a href="service-details.html" class="btn-link-two">Read More</a>
+                                        <h3 class="title">Live Event Production</a></h3>
+                                        <p>We offer a holistic suite of services, from crafting captivating event spaces through stage design and logistics to ensuring seamless coordination and execution with our event management expertise. Specializing in broadcasting and streaming, we skillfully capture, produce, and deliver high-quality live content across diverse platforms, fostering engaging experiences for both live and virtual audiences. Our commitment to professionalism and visual appeal extends to optimizing event organization, delivering a memorable and immersive viewing experience.</p>
+                                        
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-12">
                                 <div class="service-item service-style-three mb-30 wow fadeInUp" data-wow-delay=".2s">
                                     <div class="icon">
-                                        <img src="assets/images/icon/icon-2.png" alt="">
+                                        <img src="assets/images/icon/broadcasting.png" alt="">
                                     </div>
                                     <div class="text">
-                                        <h3 class="title"><a href="service-details.html">Marketing Strategy</a></h3>
-                                        <p>Sed ut perspiciatis unde omnisy natus error volupt cusantium</p>
-                                        <a href="service-details.html" class="btn-link-two">Read More</a>
+                                        <h3 class="title">Broadcasting and Streaming</a></h3>
+                                        <p>At the forefront of live esports content creation, we excel in capturing dynamic shots through skillful management of multiple camera setups. Our specialization lies in delivering top-tier visuals with visually appealing overlays and graphics, complemented by engaging commentary that enhances the viewer experience. Moreover, our team's expert commentary and insightful analysis bring depth to live broadcasts, offering valuable context and contributing to the overall excitement and understanding of esports events.</p>
+                                        
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-12">
                                 <div class="service-item service-style-three mb-30 wow fadeInUp" data-wow-delay=".25s">
                                     <div class="icon">
-                                        <img src="assets/images/icon/icon-3.png" alt="">
+                                        <img src="assets/images/icon/api.png" alt="">
                                     </div>
                                     <div class="text">
-                                        <h3 class="title"><a href="service-details.html">Design Strategy</a></h3>
-                                        <p>Sed ut perspiciatis unde omnisy natus error volupt cusantium</p>
-                                        <a href="service-details.html" class="btn-link-two">Read More</a>
+                                        <h3 class="title">API Integration </a></h3>
+                                        <p>We seamlessly integrate real-time statistics and scores, leveraging cutting-edge technology for a comprehensive view of esports events. Our expertise extends to the immersive realms of virtual and augmented reality, enhancing the viewer experience with innovative and interactive elements. With unwavering commitment, we provide robust technical support, ensuring the seamless operation of hardware, software, and network infrastructure. We pride ourselves on delivering a flawless technological framework, elevating the overall quality and reliability of esports broadcasts.</p>
+                                        
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12">
-                                <div class="service-item service-style-three mb-30 wow fadeInUp" data-wow-delay=".3s">
-                                    <div class="icon">
-                                        <img src="assets/images/icon/icon-4.png" alt="">
-                                    </div>
-                                    <div class="text">
-                                        <h3 class="title"><a href="service-details.html">Web Development</a></h3>
-                                        <p>Sed ut perspiciatis unde omnisy natus error volupt cusantium</p>
-                                        <a href="service-details.html" class="btn-link-two">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12">
-                                <div class="service-item service-style-three mb-30 wow fadeInUp" data-wow-delay=".35s">
-                                    <div class="icon">
-                                        <img src="assets/images/icon/icon-5.png" alt="">
-                                    </div>
-                                    <div class="text">
-                                        <h3 class="title"><a href="service-details.html">SEO Optimization</a></h3>
-                                        <p>Sed ut perspiciatis unde omnisy natus error volupt cusantium</p>
-                                        <a href="service-details.html" class="btn-link-two">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12">
-                                <div class="service-item service-style-three mb-30 wow fadeInUp" data-wow-delay=".4s">
-                                    <div class="icon">
-                                        <img src="assets/images/icon/icon-6.png" alt="">
-                                    </div>
-                                    <div class="text">
-                                        <h3 class="title"><a href="service-details.html">IT & Technology</a></h3>
-                                        <p>Sed ut perspiciatis unde omnisy natus error volupt cusantium</p>
-                                        <a href="service-details.html" class="btn-link-two btn-link-two">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -251,17 +169,16 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="img-holder mb-50 wow fadeInLeft">
-                                <img src="assets/images/about/img-6.png" alt="">
+                                <img src="assets/images/about/Logo.png" alt="">
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="text-wrapper mb-30 wow fadeInRight">
                                 <div class="section-title section-title-left mb-30">
-                                    <span class="sub-title st-two">About Company</span>
-                                    <h2 class="font-45">We Provide Best Web 
-                                        Design Solutions</h2>
+                                    <span class="sub-title st-two">About MOB Creatives</span>
+                                    <h2 class="font-45">We Provide Best Esports Broadcasting Solution</h2>
                                 </div>
-                                <p>On the other handwe denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment so blinded by desire that the cannot foresee the pain and trouble that are bound</p>
+                                <p>"Welcome to MOB Creatives, your premier destination for cutting-edge Esports Broadcasting and Production. At MOB Creatives, we harness the power of APIs to bring your gaming events to life, offering a seamless and immersive broadcasting experience. Our dedicated team is passionate about elevating your esports journey, ensuring top-notch quality and innovation in every production. Join us as we redefine the world of esports through our commitment to excellence and technological prowess."</p>
                                 <div class="row">
                                     <div class="col-lg-4 col-md-4 col-sm-12">
                                         <div class="item-box text-center mb-20">
@@ -269,8 +186,8 @@
                                                 <i class="far fa-bezier-curve"></i>
                                             </div>
                                             <div class="text">
-                                                <h5>Web Design 
-                                                    Solutions</h5>
+                                                <h5>Level Up 
+                                                    Your Esports Tournamnet</h5>
                                             </div>
                                         </div>
                                     </div>
@@ -280,8 +197,8 @@
                                                 <i class="far fa-ball-pile"></i>
                                             </div>
                                             <div class="text">
-                                                <h5>Technology
-                                                    Solutions</h5>
+                                                <h5>Effortless
+                                                    Tournament Registration</h5>
                                             </div>
                                         </div>
                                     </div>
@@ -291,8 +208,8 @@
                                                 <i class="far fa-bullseye-arrow"></i>
                                             </div>
                                             <div class="text">
-                                                <h5>Marketing 
-                                                    Strategy</h5>
+                                                <h5>Simplifying Tournament 
+                                                    Management Process</h5>
                                             </div>
                                         </div>
                                     </div>
@@ -308,7 +225,8 @@
                     <div class="row align-items-center">
                         <div class="col-md-8">
                             <div class="text-wrapper mb-20">
-                                <h5>We Have 25632+ Global Clients</h5>
+                                <h5>Supported Game Titles</h5>
+                                <p>For now, we only PUBG Mobile.We are working on adding more Titles</p>
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -318,39 +236,35 @@
                     <div class="partners-slider-one">
                         <div class="partner-item">
                             <div class="img-holder">
-                                <a href="#"><img src="assets/images/partners/img-11.png" alt=""></a>
+                                <a href="#"><img src="assets/images/partners/PubgM.png" alt="PubgM"></a>
                             </div>
                         </div>
                         <div class="partner-item">
                             <div class="img-holder">
-                                <a href="#"><img src="assets/images/partners/img-12.png" alt=""></a>
+                                <a href="#"><img src="assets/images/partners/PubgPC.png" alt="PubgPc"></a>
                             </div>
                         </div>
                         <div class="partner-item">
                             <div class="img-holder">
-                                <a href="#"><img src="assets/images/partners/img-13.png" alt=""></a>
+                                <a href="#"><img src="assets/images/partners/Valorant.png" alt="Valorant"></a>
                             </div>
                         </div>
                         <div class="partner-item">
                             <div class="img-holder">
-                                <a href="#"><img src="assets/images/partners/img-14.png" alt=""></a>
+                                <a href="#"><img src="assets/images/partners/ClashRoyale.png" alt="ClashRoyale"></a>
                             </div>
                         </div>
                         <div class="partner-item">
                             <div class="img-holder">
-                                <a href="#"><img src="assets/images/partners/img-15.png" alt=""></a>
+                                <a href="#"><img src="assets/images/partners/CoC.png" alt="CoC"></a>
                             </div>
                         </div>
                         <div class="partner-item">
                             <div class="img-holder">
-                                <a href="#"><img src="assets/images/partners/img-16.png" alt=""></a>
+                                <a href="#"><img src="assets/images/partners/Freefire.png" alt="Freefire"></a>
                             </div>
                         </div>
-                        <div class="partner-item">
-                            <div class="img-holder">
-                                <a href="#"><img src="assets/images/partners/img-12.png" alt=""></a>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </section><!--====== End Partners Section ======-->
@@ -360,9 +274,8 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
                             <div class="section-title text-center mb-60 wow fadeInUp">
-                                <span class="sub-title st-two">Latest Project</span>
-                                <h2 class="font-45">We Have Lot’s Of Project That We 
-                                    Recently Complated</h2>
+                                <span class="sub-title st-two">Our APIs Features</span>
+                                <h4 class="font-45">Our APIs seamlessly integrate real-time statistics, scores, and cutting-edge virtual and augmented reality features, backed by robust technical support for a comprehensive and innovative esports broadcasting and production experience</h4>
                             </div>
                         </div>
                     </div>
@@ -371,89 +284,90 @@
                             <div class="portfolio-filter-button text-center mb-30 wow fadeInDown">
                                 <ul class="filter-btn mb-30">
                                     <li data-filter="*" class="active">Show All</li>
-                                    <li data-filter=".cat-1">Design</li>
-                                    <li data-filter=".cat-2">Branding</li>
-                                    <li data-filter=".cat-3">Development</li>
-                                    <li data-filter=".cat-4">SEO</li>
-                                    <li data-filter=".cat-5">UX/UI Design</li>
+                                    <li data-filter=".cat-1">Maps</li>
+                                    <li data-filter=".cat-2">Stats</li>
+                                    <li data-filter=".cat-3">Eliminations</li>
+                                    <li data-filter=".cat-4">Winner</li>
+                                    <li data-filter=".cat-5">MVP</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="row masonry-row">
-                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-column cat-1 cat-3">
+                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-column cat-1 ">
                             <div class="portfolio-item portfolio-style-three mb-30 wow fadeInUp" data-wow-delay=".2s">
                                 <div class="img-holder">
-                                    <img src="assets/images/portfolio/img-16.jpg" alt="portfolio">
-                                    <div class="portfolio-hover">
-                                        <div class="hover-content">
-                                            <h3 class="title"><a href="project-details.html">Book Cover Design</a></h3>
-                                            <p><a href="#">Design</a>, <a href="#">Branding</a></p>
-                                        </div>
-                                    </div>
+                                    <img src="assets/images/portfolio/MAP.png" alt="MAP">
+                                    
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-column cat-2 cat-5">
+                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-column cat-2">
                             <div class="portfolio-item portfolio-style-three mb-30 wow fadeInUp" data-wow-delay=".25s">
                                 <div class="img-holder">
-                                    <img src="assets/images/portfolio/img-17.jpg" alt="portfolio">
-                                    <div class="portfolio-hover">
-                                        <div class="hover-content">
-                                            <h3 class="title"><a href="project-details.html">Book Cover Design</a></h3>
-                                            <p><a href="#">Design</a>, <a href="#">Branding</a></p>
-                                        </div>
-                                    </div>
+                                    <img src="assets/images/portfolio/stats1.png" alt="stats">
+                                   
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-column cat-3 cat-4  cat-2">
+                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-column cat-2">
+                            <div class="portfolio-item portfolio-style-three mb-30 wow fadeInUp" data-wow-delay=".25s">
+                                <div class="img-holder">
+                                    <img src="assets/images/portfolio/stats2.png" alt="stats">
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-column cat-2">
+                            <div class="portfolio-item portfolio-style-three mb-30 wow fadeInUp" data-wow-delay=".25s">
+                                <div class="img-holder">
+                                    <img src="assets/images/portfolio/stats3.png" alt="stats">
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-column cat-2">
+                            <div class="portfolio-item portfolio-style-three mb-30 wow fadeInUp" data-wow-delay=".25s">
+                                <div class="img-holder">
+                                    <img src="assets/images/portfolio/stats4.png" alt="stats">
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-column cat-3   ">
                             <div class="portfolio-item portfolio-style-three mb-30 wow fadeInUp" data-wow-delay=".3s">
                                 <div class="img-holder">
-                                    <img src="assets/images/portfolio/img-18.jpg" alt="portfolio">
-                                    <div class="portfolio-hover">
-                                        <div class="hover-content">
-                                            <h3 class="title"><a href="project-details.html">Book Cover Design</a></h3>
-                                            <p><a href="#">Design</a>, <a href="#">Branding</a></p>
-                                        </div>
-                                    </div>
+                                    <img src="assets/images/portfolio/elimination1.png" alt="elimination">
+                                    
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-8 col-md-6 col-sm-12 portfolio-column cat-5">
+                        <div class="col-lg-8 col-md-6 col-sm-12 portfolio-column cat-3">
                             <div class="portfolio-item portfolio-style-three mb-30 wow fadeInUp">
                                 <div class="img-holder">
-                                    <img src="assets/images/portfolio/img-19.jpg" alt="portfolio" data-wow-delay=".35s">
-                                    <div class="portfolio-hover">
-                                        <div class="hover-content">
-                                            <h3 class="title"><a href="project-details.html">Book Cover Design</a></h3>
-                                            <p><a href="#">Design</a>, <a href="#">Branding</a></p>
-                                        </div>
-                                    </div>
+                                    <img src="assets/images/portfolio/elimination2.png" alt="elimination" data-wow-delay=".3s">
+                                    
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-column cat-4 cat-1 cat-2">
+                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-column cat-4  ">
                             <div class="portfolio-item portfolio-style-three mb-30 wow fadeInUp" data-wow-delay=".4s">
                                 <div class="img-holder">
-                                    <img src="assets/images/portfolio/img-20.jpg" alt="portfolio">
-                                    <div class="portfolio-hover">
-                                        <div class="hover-content">
-                                            <h3 class="title"><a href="project-details.html">Book Cover Design</a></h3>
-                                            <p><a href="#">Design</a>, <a href="#">Branding</a></p>
-                                        </div>
-                                    </div>
+                                    <img src="assets/images/portfolio/winner.png" alt="winner">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-column cat-5  ">
+                            <div class="portfolio-item portfolio-style-three mb-30 wow fadeInUp" data-wow-delay=".4s">
+                                <div class="img-holder">
+                                    <img src="assets/images/portfolio/MVP.png" alt="MVP">
+                                    
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="button-box text-center mt-30 wow fadeInUp">
-                                <a href="projects.html" class="main-btn arrow-btn bordered-btn btn-blue">View More Project</a>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
             </section><!--====== End Portfolio Section ======-->
             <!--====== Start Counter Section ======-->
@@ -464,7 +378,7 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-6">
                             <div class="section-title text-center mb-80 wow fadeInUp">
-                                <span class="sub-title st-two">Company Statices</span>
+                                <span class="sub-title st-two">Our Statistics</span>
                                 <h2 class="font-45">Something Know About 
                                     Our Achievment</h2>
                             </div>
@@ -477,138 +391,48 @@
                                     <img src="assets/images/icon/icon-16.png" alt="">
                                 </div>
                                 <div class="text">
-                                    <h2 class="number"><span class="count">3654</span>+</h2>
-                                    <p class="position">Project  Done</p>
+                                    <h2 class="number"><span class="count">300</span>+</h2>
+                                    <p class="position">Tournaments  Done</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="counter-item text-center mb-40 wow fadeInDown" data-wow-delay=".3s">
                                 <div class="icon">
-                                    <img src="assets/images/icon/icon-17.png" alt="">
+                                    <img src="assets/images/icon/gamer.png" alt="">
                                 </div>
                                 <div class="text">
-                                    <h2 class="number"><span class="count">9634</span>+</h2>
-                                    <p class="position">Global Parterns</p>
+                                    <h2 class="number"><span class="count">1634</span>+</h2>
+                                    <p class="position">Teams Participated</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="counter-item text-center mb-40 mt-lg-3 wow fadeInUp" data-wow-delay=".4s">
                                 <div class="icon">
-                                    <img src="assets/images/icon/icon-18.png" alt="">
+                                    <img src="assets/images/icon/international.png" alt="">
                                 </div>
                                 <div class="text">
-                                    <h2 class="number"><span class="count">7856</span>+</h2>
-                                    <p class="position">Awards Winning</p>
+                                    <h2 class="number"><span class="count">3</span>+</h2>
+                                    <p class="position">International Broadcasting</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="counter-item text-center mb-40 wow fadeInDown" data-wow-delay=".5s">
                                 <div class="icon">
-                                    <img src="assets/images/icon/icon-19.png" alt="">
+                                    <img src="assets/images/icon/icon-12.png" alt="">
                                 </div>
                                 <div class="text">
-                                    <h2 class="number"><span class="count">7851</span>+</h2>
-                                    <p class="position">Creative Teams</p>
+                                    <h2 class="number"><span class="count">785100</span>+</h2>
+                                    <p class="position">Vieweship</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section><!--====== End Counter Section ======-->
-            <!--====== Start Testimonial Section ======-->
-            <section class="testimonial-area testimonial-area-v4 pt-120" id="testimonial">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-7">
-                            <div class="section-title text-center WOW fadeInUp">
-                                <span class="sub-title st-two">Our Testimonials</span>
-                                <h2 class="font-45">What Our Clients Say About 
-                                    Our Solutions</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row align-items-center">
-                        <div class="col-lg-5">
-                            <div class="img-holder wow fadeInLeft">
-                                <img src="assets/images/testimonial/img-4.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-lg-7">
-                            <div class="text-wrapper mb-20 wow fadeInRight">
-                                <div class="testimonial-slider-one">
-                                    <div class="testimonial-item">
-                                        <div class="testimonial-content">
-                                            <p>Sit amet consectetur adipiscing elitsed 
-                                                eiusmod tempor incididunt ut labore ets dolore magna aliqua spendisse ultricesy gravida. Risus commodo viverra maece
-                                                nas accumsan lacus facilisis.</p>
-                                            <div class="author-title-thumb d-flex">
-                                                <div class="author-thumb">
-                                                    <img src="assets/images/testimonial/thumb-1.jpg" alt="">
-                                                </div>
-                                                <div class="author-title">
-                                                    <h4>Robert A. Greening</h4>
-                                                    <p class="position">Senior Manager</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="testimonial-item">
-                                        <div class="testimonial-content">
-                                            <p>Sit amet consectetur adipiscing elitsed 
-                                                eiusmod tempor incididunt ut labore ets dolore magna aliqua spendisse ultricesy gravida. Risus commodo viverra maece
-                                                nas accumsan lacus facilisis.</p>
-                                            <div class="author-title-thumb d-flex">
-                                                <div class="author-thumb">
-                                                    <img src="assets/images/testimonial/thumb-2.jpg" alt="">
-                                                </div>
-                                                <div class="author-title">
-                                                    <h4>Robert A. Greening</h4>
-                                                    <p class="position">Senior Manager</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="testimonial-item">
-                                        <div class="testimonial-content">
-                                            <p>Sit amet consectetur adipiscing elitsed 
-                                                eiusmod tempor incididunt ut labore ets dolore magna aliqua spendisse ultricesy gravida. Risus commodo viverra maece
-                                                nas accumsan lacus facilisis.</p>
-                                            <div class="author-title-thumb d-flex">
-                                                <div class="author-thumb">
-                                                    <img src="assets/images/testimonial/thumb-1.jpg" alt="">
-                                                </div>
-                                                <div class="author-title">
-                                                    <h4>Robert A. Greening</h4>
-                                                    <p class="position">Senior Manager</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="testimonial-item">
-                                        <div class="testimonial-content">
-                                            <p>Sit amet consectetur adipiscing elitsed 
-                                                eiusmod tempor incididunt ut labore ets dolore magna aliqua spendisse ultricesy gravida. Risus commodo viverra maece
-                                                nas accumsan lacus facilisis.</p>
-                                            <div class="author-title-thumb d-flex">
-                                                <div class="author-thumb">
-                                                    <img src="assets/images/testimonial/thumb-2.jpg" alt="">
-                                                </div>
-                                                <div class="author-title">
-                                                    <h4>Robert A. Greening</h4>
-                                                    <p class="position">Senior Manager</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section><!--====== End Testimonial Section ======-->
+            
             <!--====== Start Pricing Section ======-->
             <section class="pricing-area pricing-area-v3 dark-blue-bg position-relative z-1 pt-120 pb-90" id="pricing">
                 <div class="shape shape-one"><span><img src="assets/images/shape/pattern-shape-2.png" alt=""></span></div>
@@ -619,8 +443,8 @@
                         <div class="col-lg-6">
                             <div class="section-title section-title-white section-title-left mb-60 wow fadeInLeft">
                                 <span class="sub-title st-two">Pricing Plan</span>
-                                <h2 class="font-45">Best Pricing For Create 
-                                    Amazing Web Design</h2>
+                                <h2 class="font-45">Best Pricing For Broadcasting 
+                                    And Production</h2>
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -642,13 +466,14 @@
                                         </div>
                                         <div class="pricing-body">
                                             <ul class="pricing-list">
-                                                <li class="check">Unique Websites Design</li>
-                                                <li class="check">Automate Busy Work</li>
-                                                <li class="check">Optimize Your Efforts</li>
-                                                <li class="uncheck">Web Developments</li>
-                                                <li class="uncheck">UX/UI Design Strategy</li>
+                                                <li class="check">1 Tournament Concurrently</li>
+                                                <li class="check">Limited Teams, Players and Matches</li>
+                                                <li class="check">Limited Tournament</li>
+                                                <li class="uncheck">2 Admin Account</li>
+                                                <li class="uncheck">Full Customization</li>
+                                                <li class="uncheck">No Global Database Access for Teams and Players</li>
                                             </ul>
-                                            <a href="contact.html" class="main-btn arrow-btn">Choose Plan</a>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -661,13 +486,14 @@
                                         </div>
                                         <div class="pricing-body">
                                             <ul class="pricing-list">
-                                                <li class="check">Unique Websites Design</li>
-                                                <li class="check">Automate Busy Work</li>
-                                                <li class="check">Optimize Your Efforts</li>
-                                                <li class="check">Web Developments</li>
-                                                <li class="check">UX/UI Design Strategy</li>
+                                                <li class="check">1 Tournament Concurrently</li>
+                                                <li class="check">Limited Teams, Players and Matches</li>
+                                                <li class="check">Limited Tournament</li>
+                                                <li class="check">2 Admin Account</li>
+                                                <li class="check">Semi-Full Customization</li>
+                                                <li class="uncheck">No Global Database Access for Teams and Players</li>
                                             </ul>
-                                            <a href="contact.html" class="main-btn arrow-btn">Choose Plan</a>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -680,13 +506,14 @@
                                         </div>
                                         <div class="pricing-body">
                                             <ul class="pricing-list">
-                                                <li class="check">Unique Websites Design</li>
-                                                <li class="check">Automate Busy Work</li>
-                                                <li class="check">Optimize Your Efforts</li>
-                                                <li class="check">Web Developments</li>
-                                                <li class="check">UX/UI Design Strategy</li>
+                                                <li class="check">1 Tournament Concurrently</li>
+                                                <li class="check">Unlimited Teams, Players and Matches</li>
+                                                <li class="check">Unlimited Tournament</li>
+                                                <li class="check">Unlimited Admin Account</li>
+                                                <li class="check">Full Customization</li>
+                                                <li class="check">Global Database Access for Teams and Players</li>
                                             </ul>
-                                            <a href="contact.html" class="main-btn arrow-btn">Choose Plan</a>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -703,13 +530,14 @@
                                         </div>
                                         <div class="pricing-body">
                                             <ul class="pricing-list">
-                                                <li class="check">Unique Websites Design</li>
-                                                <li class="check">Automate Busy Work</li>
-                                                <li class="check">Optimize Your Efforts</li>
-                                                <li class="uncheck">Web Developments</li>
-                                                <li class="uncheck">UX/UI Design Strategy</li>
+                                                <li class="check">1 Tournament Concurrently</li>
+                                                <li class="check">Limited Teams, Players and Matches</li>
+                                                <li class="check">Limited Tournament</li>
+                                                <li class="uncheck">2 Admin Account</li>
+                                                <li class="uncheck">Full Customization</li>
+                                                <li class="uncheck">No Global Database Access for Teams and Players</li>
                                             </ul>
-                                            <a href="contact.html" class="main-btn arrow-btn">Choose Plan</a>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -722,13 +550,14 @@
                                         </div>
                                         <div class="pricing-body">
                                             <ul class="pricing-list">
-                                                <li class="check">Unique Websites Design</li>
-                                                <li class="check">Automate Busy Work</li>
-                                                <li class="check">Optimize Your Efforts</li>
-                                                <li class="check">Web Developments</li>
-                                                <li class="check">UX/UI Design Strategy</li>
+                                                <li class="check">1 Tournament Concurrently</li>
+                                                <li class="check">Limited Teams, Players and Matches</li>
+                                                <li class="check">Limited Tournament</li>
+                                                <li class="check">2 Admin Account</li>
+                                                <li class="check">Semi-Full Customization</li>
+                                                <li class="uncheck">No Global Database Access for Teams and Players</li>
                                             </ul>
-                                            <a href="contact.html" class="main-btn arrow-btn">Choose Plan</a>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -741,13 +570,14 @@
                                         </div>
                                         <div class="pricing-body">
                                             <ul class="pricing-list">
-                                                <li class="check">Unique Websites Design</li>
-                                                <li class="check">Automate Busy Work</li>
-                                                <li class="check">Optimize Your Efforts</li>
-                                                <li class="check">Web Developments</li>
-                                                <li class="check">UX/UI Design Strategy</li>
+                                                <li class="check">1 Tournament Concurrently</li>
+                                                <li class="check">Unlimited Teams, Players and Matches</li>
+                                                <li class="check">Unlimited Tournament</li>
+                                                <li class="check">Unlimited Admin Account</li>
+                                                <li class="check">Full Customization</li>
+                                                <li class="check">Global Database Access for Teams and Players</li>
                                             </ul>
-                                            <a href="contact.html" class="main-btn arrow-btn">Choose Plan</a>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -762,9 +592,9 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-6">
                             <div class="section-title text-center mb-60 wow fadeInUp">
-                                <span class="sub-title st-two">Our News & Blog</span>
-                                <h2 class="font-45">Get Every Sigle Update
-                                    Latest News & Tips</h2>
+                                <span class="sub-title st-two">About Our API</span>
+                                <h2 class="font-45">Level Up Your Tournament:
+                                    Elevate Your Experience and Enhance the Players' Journey.</h2>
                             </div>
                         </div>
                     </div>
@@ -772,57 +602,38 @@
                         <div class="col-lg-4 col-md-6 col-sm-12">
                             <div class="blog-post-item mb-40 wow fadeInUp" data-wow-delay=".2s">
                                 <div class="post-thumbnail">
-                                    <img src="assets/images/blog/img-1.jpg" alt="post image">
+                                    <img src="assets/images/blog/setup2.png" alt="post image">
                                 </div>
                                 <div class="entry-content">
-                                    <a href="blog-details.html" class="icon-btn"><i class="fas fa-arrow-right"></i></a>
-                                    <h4 class="title"><a href="blog-details.html">Guide To Newly Suppored Modern CSS Pseudo</a></h4>
-                                    <p>Sit amet consecte adeiscin eiusme 
-                                        tempor incididunt labore dolore </p>
-                                    <div class="post-meta">
-                                        <ul>
-                                            <li><span><i class="far fa-calendar-alt"></i><a href="blogs.html">25 Feb 2022</a></span></li>
-                                            <li><span><i class="far fa-comments"></i><a href="blogs.html">Comment (5)</a></span></li>
-                                        </ul>
-                                    </div>
+                                    
+                                    <h4 class="title"><a href="blog-details.html">Easy to Setup</a></h4>
+                                    <p>Our platform is designed to be easy to use, and beautiful to look at. We've taken the time to make sure that you can get up and running in no time, and that you will love the experience of using our platform. </p>
+                                   
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12">
                             <div class="blog-post-item mb-40 wow fadeInUp" data-wow-delay=".3s">
                                 <div class="post-thumbnail">
-                                    <img src="assets/images/blog/img-2.jpg" alt="post image">
+                                    <img src="assets/images/blog/adapt.jpg" alt="post image">
                                 </div>
                                 <div class="entry-content">
-                                    <a href="blog-details.html" class="icon-btn"><i class="fas fa-arrow-right"></i></a>
-                                    <h4 class="title"><a href="blog-details.html">Guide To Newly Suppored Modern CSS Pseudo</a></h4>
-                                    <p>Sit amet consecte adeiscin eiusme 
-                                        tempor incididunt labore dolore </p>
-                                    <div class="post-meta">
-                                        <ul>
-                                            <li><span><i class="far fa-calendar-alt"></i><a href="blogs.html">25 Feb 2022</a></span></li>
-                                            <li><span><i class="far fa-comments"></i><a href="blogs.html">Comment (5)</a></span></li>
-                                        </ul>
-                                    </div>
+                                    <h4 class="title"><a href="blog-details.html">Adaptable based on your preferences and requirements</a></h4>
+                                    <p>We understand that each esports event is unique, requiring a platform that can seamlessly adapt to your distinctive requirements. That's why we've meticulously designed our platform to be highly customizable, allowing you to personalize it according to your preferences. With us, you have the flexibility to make it truly your own, ensuring a tailored experience for every event.</p>
+                                    
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12">
                             <div class="blog-post-item mb-40 wow fadeInUp" data-wow-delay=".4s">
                                 <div class="post-thumbnail">
-                                    <img src="assets/images/blog/img-3.jpg" alt="post image">
+                                    <img src="assets/images/blog/launch2.png" alt="post image">
                                 </div>
                                 <div class="entry-content">
-                                    <a href="blog-details.html" class="icon-btn"><i class="fas fa-arrow-right"></i></a>
-                                    <h4 class="title"><a href="blog-details.html">Guide To Newly Suppored Modern CSS Pseudo</a></h4>
-                                    <p>Sit amet consecte adeiscin eiusme 
-                                        tempor incididunt labore dolore </p>
-                                    <div class="post-meta">
-                                        <ul>
-                                            <li><span><i class="far fa-calendar-alt"></i><a href="blogs.html">25 Feb 2022</a></span></li>
-                                            <li><span><i class="far fa-comments"></i><a href="blogs.html">Comment (5)</a></span></li>
-                                        </ul>
-                                    </div>
+                                    
+                                    <h4 class="title"><a href="blog-details.html">Comprehensive in functionality and poised for action</a></h4>
+                                    <p>Our extensive widget library and robust API are designed to address a wide range of use cases effectively. We've ensured that getting started is a breeze, allowing you to seamlessly integrate and enjoy a delightful experience with our platform</p>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -830,30 +641,7 @@
                 </div>
             </section><!--====== End Blog Section ======-->
             <!--====== Start CTA Section ======-->
-            <section class="cta-area cta-area-v3 pt-55 position-relative z-1">
-                <div class="shape shape-one"><span><img src="assets/images/shape/shape-18.png" alt=""></span></div>
-                <div class="shape shape-two"><span><img src="assets/images/shape/shape-19.png" alt=""></span></div>
-                <div class="shape shape-three"><span><img src="assets/images/shape/shape-20.png" alt=""></span></div>
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-5">
-                            <div class="text-wrapper mb-55 wow fadeInLeft">
-                                <div class="section-title section-title-white section-title-left mb-35">
-                                    <span class="sub-title st-two">Work Together</span>
-                                    <h2 class="font-45">Have Any Project On 
-                                        Your Minds?</h2>
-                                </div>
-                                <a href="contact.html" class="main-btn arrow-btn">Contact Us</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-7">
-                            <div class="cta-img text-lg-right mb-55 wow fadeInRight">
-                                <img src="assets/images/cta/img-2.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section><!--====== End CTA Section ======-->
+            <!--====== End CTA Section ======-->
             <!--====== Start Footer ======-->
             <footer class="footer-area">
                 <div class="container">
@@ -861,7 +649,7 @@
                         <div class="row">
                             <div class="col-lg-4">
                                 <div class="footer-logo mb-30 wow fadeInLeft">
-                                    <a href="index-3.html"><img src="assets/images/logo/footer-logo-2.png" alt="Footer Logo"></a>
+                                    <a href="index-3.html"><img src="assets/images/logo/footer.png" alt="Footer Logo"></a>
                                 </div>
                             </div>
                             <div class="col-lg-4">
@@ -870,9 +658,9 @@
                                         <img src="assets/images/icon/icon-14.png" alt="">
                                     </div>
                                     <div class="info">
-                                        <span class="sub-title">Free Consultations ?</span>
-                                        <h3><a href="mailto:hotline@gmail.com">hotline@gmail.com</a></h3>
-                                        <h4><a href="tel:+012(345)678">+012 (345) 678</a></h4>
+                                        <span class="sub-title">Any Queries ?</span>
+                                        <h3><a href="mailto:support@mobcr3atives.com">support@mobcr3atives.com</a></h3>
+                                        <h4><a href="tel:+9779761654803">+9779761654803</a></h4>
                                     </div>
                                 </div>
                             </div>
@@ -883,8 +671,8 @@
                                     </div>
                                     <div class="info">
                                         <span class="sub-title">Office Location</span>
-                                        <h3>55 Main Street, 2nd Block
-                                            New York City</h3>
+                                        <h3>Kathmandu, Budha-Nilkantha
+                                            Kapan</h3>
                                     </div>
                                 </div>
                             </div>
@@ -896,17 +684,8 @@
                                 <div class="widget about-widget mb-40 wow fadeInUp" data-wow-delay=".15s">
                                     <h4 class="widget-title">About Us</h4>
                                     <div class="about-content">
-                                        <p>Neque porro quisquam est 
-                                            qui dolorem ipsum quia dolor amete consectetur adipisci velits quia numquam</p>
-                                        <div class="social-box">
-                                            <h4>Follow</h4>
-                                            <ul class="social-link">
-                                                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                                                <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-                                                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                                                <li><a href="#"><i class="fab fa-behance-square"></i></a></li>
-                                            </ul>
-                                        </div>
+                                        <p>At the core of our essence is a passion for esports broadcasting and production. We specialize in delivering top-tier, immersive experiences, ensuring every tournament or event we touch becomes a memorable spectacle.</p>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -914,33 +693,21 @@
                                 <div class="widget footer-nav-widget mb-40 wow fadeInUp" data-wow-delay=".15s">
                                     <h4 class="widget-title">Services</h4>
                                     <ul class="widget-nav">
-                                        <li><a href="services.html">SEO Optimization</a></li>
-                                        <li><a href="services.html">Digital Marketing</a></li>
-                                        <li><a href="services.html">IT Consulting</a></li>
-                                        <li><a href="services.html">Products Design</a></li>
-                                        <li><a href="services.html">Web Development</a></li>
-                                        <li><a href="services.html">Email Marketing</a></li>
+                                        <li>Live Event Production</li>
+                                        <li>Broadcasting and Streaming</li>
+                                        <li>API Integration</li>
+                                        <li>Custom Graphic and Animation</li>
+                                        <li>Virtual and Augmented Reality</li>
+                                        <li>Content Creation</li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-xl-2 col-lg-3 col-md-6 col-sm-12">
-                                <div class="widget footer-nav-widget mb-40 wow fadeInUp" data-wow-delay=".20s">
-                                    <h4 class="widget-title">Suppots</h4>
-                                    <ul class="widget-nav">
-                                        <li><a href="services.html">About Agency</a></li>
-                                        <li><a href="services.html">Privacy & Policy</a></li>
-                                        <li><a href="services.html">Need a Career ?</a></li>
-                                        <li><a href="services.html">Online Support</a></li>
-                                        <li><a href="services.html">Faqs</a></li>
-                                        <li><a href="services.html">Team Member</a></li>
-                                    </ul>
-                                </div>
-                            </div>
+                            
                             <div class="col-xl-4 col-lg-3 col-md-6 col-sm-12">
                                 <div class="widget newsletter-widget mb-40 wow fadeInUp" data-wow-delay=".30s">
                                     <h4 class="widget-title">Newsletters</h4>
                                     <div class="newsletter-content">
-                                        <p>Dolor sit amet consectetur adipiscing sed eiusmod tempor incididunt</p>
+                                        <p>Suscribe to our Newsletter to get our latest news</p>
                                         <form>
                                             <div class="form_group">
                                                 <input type="email" class="form_control" placeholder="Email Address" name="email" required>
@@ -956,7 +723,7 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-10">
                                 <div class="copyright-text text-center">
-                                    <p>Copyright &copy;2022 Pixlab. All Right Reserved</p>
+                                    <p>Copyright &copy;2023 MOB Creatives. All Right Reserved</p>
                                 </div>
                             </div>
                         </div>

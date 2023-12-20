@@ -23,7 +23,6 @@ Route::get('/dashboardesports', [HomeController::class, 'index1']);
 
 
 
-
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
