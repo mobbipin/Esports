@@ -45,7 +45,7 @@
             </div>
                 
                 <li class="sidebar-list-item">
-                    <a href="/Home1" >
+                    <a href="/dashboardesports" >
                     <span class="material-icons-outlined">home</span>Home
                     </a>
                 </li>            
