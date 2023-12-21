@@ -21,7 +21,13 @@ use App\Http\Controllers\InfotournaController;
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/dashboardesports', [HomeController::class, 'index1']);
 
-
+//Viewing buttons
+Route:: view ("/Tournaments",'Tournaments');
+Route:: view ("/Teams",'Teams');
+Route:: view ("/Home1",'Home1');
+Route:: view ("/Stages",'Stages');
+Route:: view ("/Match",'Match');
+Route:: view ("/Info",'Info');
 
 Route::middleware([
     'auth:sanctum',
