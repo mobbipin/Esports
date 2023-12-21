@@ -70,7 +70,7 @@
                         <span class="material-icons-outlined">info</span> Info
                     </a>
                 </li>
-        
+         
                 <!-- Add more sidebar items as needed -->
             </ul>
         </aside>

@@ -1,57 +1,15 @@
-<nav x-data="{ open: false }" class="">
+<nav x-data="{ open: false }" class="bg-white border-b border-gray-100">
     <!-- Primary Navigation Menu -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Organization</title>
-    <style>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+            <div class="flex">
 
-    
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px; /* Add padding to adjust spacing as needed */
-        }
-    
-        .organization-name {
-            /* Add styling for your organization name on the left */
-            font-size: 20px; /* Adjust font size as needed */
-        }
-    
-        .adminclick {
-            /* Styling for .adminclick on the right */
-            padding: 10px;
-            background-color: #fff; /* Set your desired background color */
-            border-left: 1px solid #ccc; /* Add a border for separation, customize as needed */
-            z-index: 1000; /* Adjust the z-index as needed to ensure it appears above other elements */
-        }
-    
-        /* Adjustments for the content next to adminclick (assuming 250px width) */
-        .adminclick + * {
-            margin-right: 260px; /* Adjust the margin based on the adminclick width */
-        }
-    
-        /* Media query for small screens to adjust the layout */
-        /* @media (max-width: 767px) { */
-            /* .adminclick { */
-                /* display: none; Hide adminclick on small screens */
-            /* } */
-    
-            /* Adjustments for the content on small screens */
-            /* .adminclick + * { */
-                /* margin-right: 0; */
-            /* } */
-        /* } */
-    </style>
-    
-    
 
     
             </div>
 
-            <div class="adminclick">
+            <div class="hidden sm:flex sm:items-center sm:ms-6">
                 <!-- Teams Dropdown -->
-                
                 @if (Laravel\Jetstream\Jetstream::hasTeamFeatures())
                     <div class="ms-3 relative">
                         <x-dropdown align="right" width="60">
@@ -134,6 +92,11 @@
                                 {{ __('Profile') }}
                             </x-dropdown-link>
 
+                            @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
+                                <x-dropdown-link href="{{ route('api-tokens.index') }}">
+                                    {{ __('API Tokens') }}
+                                </x-dropdown-link>
+                            @endif
 
                             <div class="border-t border-gray-200"></div>
 

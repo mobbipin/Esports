@@ -21,13 +21,30 @@ use App\Http\Controllers\InfotournaController;
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/dashboardesports', [HomeController::class, 'index1']);
 
-//Viewing buttons
-Route:: view ("/Tournaments",'Tournaments');
-Route:: view ("/Teams",'Teams');
-Route:: view ("/Home1",'Home1');
-Route:: view ("/Stages",'Stages');
-Route:: view ("/Match",'Match');
-Route:: view ("/Info",'Info');
+//Viewing buttons for dashboard pages
+Route::get('/dashboardesports', function () {
+    return view('dashboard');
+});
+
+Route::get('/Stages', function () {
+    return view('mainpage.Stages');
+});
+
+Route::get('/Match', function () {
+    return view('mainpage.Match');
+});
+
+Route::get('/Info', function () {
+    return view('mainpage.Info');
+});
+
+Route::get('/Teams', function () {
+    return view('mainpage.Teams');
+});
+
+Route::get('/Tournaments', function () {
+    return view('mainpage.Tournaments');
+});
 
 Route::middleware([
     'auth:sanctum',
