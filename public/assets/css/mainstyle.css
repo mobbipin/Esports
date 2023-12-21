@@ -1,0 +1,68 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.logout button {
+    background-color: #fff;
+    color: #333;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.subheader {
+    background-color: #eee;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tournament-name {
+    font-size: 20px;
+}
+
+.page-buttons button {
+    margin-left: 10px;
+    background-color: #430000;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.mid-section {
+    padding: 20px;
+}
+
+.tournament-details {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.social-links a {
+    color: #fff;
+    margin-left: 10px;
+    text-decoration: none;
+}

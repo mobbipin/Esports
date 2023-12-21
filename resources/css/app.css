@@ -1,7 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-[x-cloak] {
-    display: none;
+h1{font-weight: 700;
+    letter-spacing: -0.03em;
+    color:blue;
 }
+
