@@ -1,0 +1,105 @@
+/* Team page*/
+.font-weight-bold {
+    font-size: 43px;
+    font-weight: bold;
+    color: black;
+    margin-top: -15px; /* Adjust the value to move the text up */
+  }
+
+  .main-buttons {
+    display: flex;
+    justify-content: right;
+}
+
+    .main-buttons button {
+    margin-right: 15px; /* Adjust the spacing between buttons */
+}
+
+    .btn-add-teams, .btn-load-teams{
+    padding: 15px 20px; /* Adjust padding to make the button a bit bigger */
+    font-size: 16px;
+    color: white; /* Text color */
+    border: none;
+    border-radius: 15px; /* Adjust the border-radius for curved edges */
+    font-family: 'Poppins'; /* Specify your chosen font */
+  }
+  
+    .btn-add-teams {
+    background-color: #2d3745;
+    
+  }
+  
+    .btn-load-teams {
+    background-color: #2d3745;
+  }
+  
+  /* Hover effect */
+    .btn-add-teams:hover, .btn-load-teams:hover {
+    background-color: #7b68ee; /* Darker purple on hover */
+    cursor: pointer;
+  }
+
+  /* Search bar styles */
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; 
+}
+
+#team-search {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px; 
+  width: 350px; 
+  font-size: 14px; 
+}
+
+.btn-search {
+  padding: 8px 12px;
+  background-color: #2d3745; 
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-search:hover {
+  background-color: #7b68ee;
+}
+  
+  /* Styles for the form */
+.team-form {
+  max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+
+.team-form input,
+.team-form textarea {
+  display: block;
+  margin: 0 auto 10px; /* Center align the labels and inputs */
+  width: 100%; /* Adjust the width of form elements */
+  padding: 8px; 
+  border: 0px solid #ccc; /* Add a border */
+  border-radius: 8px; 
+}
+
+.team-form textarea {
+  resize: vertical;
+}
+
+.team-form button {
+  padding: 8px 12px;
+  background-color: #2d3745;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.team-form button:hover {
+  background-color: #7b68ee;
+}
