@@ -70,11 +70,41 @@
                         <span class="material-icons-outlined">info</span> Info
                     </a>
                 </li>
-        
+         
                 <!-- Add more sidebar items as needed -->
             </ul>
         </aside>
         <!-- End Sidebar -->
 
+        <div class="main-container">
+        <!-- Content Section for Tournaments -->
+        	<div class="tournament-section">
+            	<h2>Tournaments</h2>
 
+            <!-- Display Current/Running Tournaments -->
+            		<div class="current-tournaments">
+                	<h3>Current Tournaments</h3>
+                {{-- Example: --}}
+                		<ul>
+                    @foreach($currentTournaments as $tournament)
+                        			<li>{{ $tournament->name }}</li>
+                    @endforeach
+                		</ul>
+                {{-- End Example --}}
+            	</div>
+
+            <!-- Create Tournament Form -->
+            	<div class="create-tournament">
+                	<h3>Create Tournament</h3>
+                <!-- Add form for creating a new tournament -->
+                	<form action="{{ route('tournaments.store') }}" method="POST">
+                    @csrf
+                    <!-- Add form fields as needed (e.g., name, date, etc.) -->
+                    	<label for="tournament_name">Tournament Name:</label>
+                    	<input type="text" id="tournament_name" name="tournament_name" required>
+                    	<button type="submit">Create</button>
+                	</form>
+            	</div>
+        </div>
+    </div>
 </x-app-layout>

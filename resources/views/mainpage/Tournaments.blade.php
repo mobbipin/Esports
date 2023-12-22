@@ -1,12 +1,7 @@
 <x-app-layout>
-
     <!DOCTYPE html>
     <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Admin Dashboard</title>
-    
         <!-- Montserrat Font -->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
@@ -43,12 +38,12 @@
                     </div>
                     <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
                 </div>
-                    
                     <li class="sidebar-list-item">
                         <a href="/dashboardesports" >
                         <span class="material-icons-outlined">home</span>Home
                         </a>
-                    </li>            
+                    </li> 
+                
                     <li class="sidebar-list-item">
                         <a href="/Tournaments" >
                             <span class="material-icons-outlined">dashboard</span> Tournaments
@@ -75,57 +70,81 @@
                             <span class="material-icons-outlined">info</span> Info
                         </a>
                     </li>
-            
+             
                     <!-- Add more sidebar items as needed -->
                 </ul>
             </aside>
             <!-- End Sidebar -->
-    
-            <!-- Main -->
-            <main class="main-container">
-                <div class="main-title">
-                    <p class="font-weight-bold">DASHBOARD</p>
-                </div>
-    
-                <div class="main-cards">
-                    <!-- Add Blade syntax for dynamic content in the cards -->
-                    {{-- Example --}}
-                    <div class="card">
-                        <div class="card-inner">
-                            <p class="text-primary">Welcome User</p>
-                            <span class="material-icons-outlined">accessibility_new</span>
-                        </div>
-                        
-                    </div>
-                    {{-- End Example --}}
-    
-                    <!-- Add more cards as needed -->
-                </div>
-                <!--
-                <div class="charts">
-                    Add Blade syntax for dynamic content in the charts 
-                    {{-- Example --}}
-                    <div class="charts-card">
-                        <p class="chart-title">Top 5 Products</p>
-                        <div id="bar-chart"></div>
-                    </div>
-                    {{-- End Example --}}
-    
-                     Add more charts as needed -->
-                </div>
-            </main>
-            <!-- End Main -->
-    
+<!-- Main Container -->
+<main class="main-container">
+    <div class="main-title">
+        <p class="font-weight-bold">DASHBOARD</p>
+    </div>
+
+    <!-- Buttons for Loading Existing Tournaments and Adding New Tournaments -->
+    <div class="main-buttons">
+        <button class="btn-load-tournaments" onclick="loadExistingTournaments()">Load Existing Tournaments</button>
+        <button class="btn-add-tournament" onclick="openAddNewTournamentForm()">Add New Tournament</button>
+    </div>
+
+    <!-- Existing Tournaments Section (Initially Hidden) -->
+    <div id="existing-tournaments-section" style="display: none;">
+        <!-- Add Blade syntax for dynamic content related to existing tournaments -->
+        {{-- Example --}}
+        <div class="card">
+            <div class="card-inner">
+                <p class="text-primary">Tournament 1</p>
+                <!-- Add more details or dynamic content related to each existing tournament -->
+            </div>
         </div>
-    
-        <!-- Scripts -->
-        <!-- ApexCharts -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
-        <!-- Custom JS -->
-        <script src="{{ asset('js/scripts.js') }}"></script>
-    </body>
-    </html>
-    
+        {{-- End Example --}}
+        <!-- Add more content related to existing tournaments as needed -->
+    </div>
+
+    <!-- New Tournament Section (Initially Hidden) -->
+    <div id="new-tournament-section" style="display: none;">
+        <!-- Form for adding a new tournament -->
+        <div class="section" id="addNewTournament">
+            <h2>Add New Tournament</h2>
+            <form id="tournamentForm" action="{{ url('/save-tournament') }}" method="post">
+                @csrf <!-- Include the CSRF token -->
+
+                <label for="title">Tournament Title:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="description">Tournament Description:</label>
+                <textarea id="description" name="description" required></textarea>
+
+                <label for="game">Tournament Game:</label>
+                <select id="game" name="game" required>
+                    <option value="pubg">PUBG</option>
+                    <option value="bgmi">BGMI</option>
+                    <option value="ff">Free Fire</option>
+                    <option value="valorant">Valorant</option>
+                    <option value="cs">Counter-Strike</option>
+                    <!-- Add more options as needed -->
+                </select>
+
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+
+                <!-- Add more form fields as needed -->
+
+                <button type="submit">Save Tournament</button>
+            </form>
+        </div>
+    </div>
+</main>
+
+<script>
+    function openAddNewTournamentForm() {
+        // Hide existing tournaments section
+        document.getElementById('existing-tournaments-section').style.display = 'none';
+
+        // Show new tournament section
+        document.getElementById('new-tournament-section').style.display = 'block';
+    }
+</script>
+
     
     </x-app-layout>
-    
