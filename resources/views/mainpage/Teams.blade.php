@@ -10,26 +10,10 @@
     
         <!-- Custom CSS -->
         <link rel="stylesheet" href="{{ asset('assets/css/mainstyle.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/css/teamspage.css') }}">
     </head>
     <body>
         <div class="grid-container">
-    
-            <!-- Header -->
-            <header class="header">
-                <div class="menu-icon" onclick="openSidebar()">
-                    <span class="material-icons-outlined">menu</span>
-                </div>
-                <div class="header-left">
-                    <span class="material-icons-outlined">search</span>
-                </div>
-                <div class="header-right">
-                    <span class="material-icons-outlined">notifications</span>
-                    <span class="material-icons-outlined">email</span>
-                    
-                </div>
-            </header>
-            <!-- End Header -->
-    
             <!-- Sidebar -->
             <aside id="sidebar">
                 <div class="sidebar-title">
@@ -75,6 +59,46 @@
                 </ul>
             </aside>
             <!-- End Sidebar -->
+
+<!-- Main Container -->
+    <!-- HTML with styled title and buttons -->
+        <main class="main-container">
     
+<!-- Buttons for Loading Existing Teams and Adding New Teams -->
+        <abstract class="main-buttons">
+        <class="search-bar">
+        <input type="text" id="team-search" placeholder="Search teams...">
+        <button class="btn-search" onclick="searchTeams()"><span class="material-icons-outlined">search</span>
+            <button class="btn-load-teams" onclick="loadExistingTeams()">Load Existing Teams</button>
+            <button class="btn-add-teams" onclick="openAddNewTeams()">Enter a New Team</button>
+        </abstract>
+
+         <!-- Adding team form -->
+        <div>
+        <form id="team-form" class="team-form">
+            <label for="team-name">Team Name</label>
+            <input type="text" id="team-name" name="team-name" required>
+
+            <label for="team-tag">Team Tag</label>
+            <input type="text" id="team-tag" name="team-tag" required>
+
+            <label for="team-description">Description</label>
+            <textarea id="team-description" name="team-description" rows="3" required></textarea>
+
+            <label for="team-logo">LOGO</label>
+            <input type="file" id="team-logo" name="team-logo" accept="image/*">
+
+            <label for="team-country">Country</label>
+            <input type="text" id="team-country" name="team-country" required>
+
+            <label for="team-email">Email</label>
+            <input type="text" id="team-email" name="team-email" required>
+
+            <button type="submit">Submit</button>
+        </form>
+        </div>
+    
+
+
     
     </x-app-layout>
