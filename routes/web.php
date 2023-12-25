@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\TournamentController;
 use App\Http\Controllers\InfotournaController;
+use App\Http\Controllers\DashboardController;
 
 
 /*
@@ -18,8 +19,16 @@ use App\Http\Controllers\InfotournaController;
 */
 
 
-Route::get('/', [HomeController::class, 'index']);
-Route::get('/dashboardesports', [HomeController::class, 'index1']);
+
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard.home');
+Route::get('/dashboard/tournaments', [DashboardController::class, 'tournaments'])->name('dashboard.tournaments');
+Route::get('/dashboard/teams', [DashboardController::class, 'teams'])->name('dashboard.teams');
+Route::get('/dashboard/stages', [DashboardController::class, 'stages'])->name('dashboard.stages');
+Route::get('/dashboard/match', [DashboardController::class, 'match'])->name('dashboard.match');
+Route::get('/dashboard/info', [DashboardController::class, 'info'])->name('dashboard.info');
+
+// Add more routes as needed
+
 
 
 
