@@ -1,0 +1,128 @@
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top:80px;
+    }
+    
+    .btn-load-tournaments, .btn-add-tournament {
+    padding: 15px 20px; /* Adjust padding to make the button a bit bigger */
+    font-size: 16px;
+    color: white; /* Text color */
+    border: none;
+    border-radius: 15px; /* Adjust the border-radius for curved edges */
+    font-family: 'Poppins', sans-serif; /* Specify your chosen font */
+    }
+    
+    .btn-load-tournaments {
+      background-color: #2d3745;
+      display: block;
+      margin: 0 350px; /* Adjust the left margin */
+    }
+    
+    .btn-add-tournament {
+    background-color: #2d3745;
+    margin-right: 5px;
+    align-self: flex-start;
+    position: relative;
+    }
+    
+    /* Hover effect */
+    .btn-load-tournaments:hover, .btn-add-tournament:hover {
+    background-color: #7b68ee; /* Darker purple on hover */
+    cursor: pointer;
+    }
+    
+    
+    #new-tournament-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Adjust height as needed to center vertically */
+    }
+    
+    #addNewTournament {
+    text-align: center;
+    }
+    
+    #tournamentForm {
+    max-width: 600px; /* Adjust the maximum width of the form */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px;
+    border: 2px solid #ddd; /* Border color */
+    border-radius: 10px;
+    }
+    
+    .form-group {
+    margin-bottom: 20px;
+    }
+    
+    h3 {
+    margin-bottom: 10px;
+    }
+    
+    label {
+    display: block;
+    margin-top: 5px;
+    }
+    
+    input,
+    textarea,
+    select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    }
+
+    .showbutton {
+        background-color: purple;
+        color: white;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        }
+    
+    .save-tournament-btn {
+    background-color: purple;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+    
+    .save-tournament-btn:hover {
+    background-color: #7b68ee; /* Darker purple on hover */
+    }
+    
+    
+    
+    /* Additional CSS for the Tournament Registration Form */
+    #tournamentRegistrationForm {
+      border: 1px solid #ddd; /* Border style */
+      padding: 20px; /* Padding to provide space within the border */
+      border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow for a subtle effect */
+      margin-top: 20px; /* Optional: Add margin to create space between forms */
+      display: flex; /* Display as a flex container */
+      flex-direction: row; /* Arrange items in a row (horizontal) */
+      align-items: center; /* Center items vertically */
+    }
+    
+    /* Style for the form fields within the Tournament Registration Form */
+    #tournamentRegistrationForm .form-group {
+      margin-right: 20px; /* Optional: Add margin between form fields */
+    }
+    
+    /* Additional styling for the entire form section (optional) */
+    #addNewTournament {
+      margin-bottom: 20px; /* Add margin for spacing between the two forms */
+    }
+    
+    
+    
+    /* Add more styles as needed */
+    
+    
+    /* End Tournamnets Page */

@@ -30,7 +30,30 @@ Route::get('/dashboard/info', [DashboardController::class, 'info'])->name('dashb
 // Add more routes as needed
 
 
+//Viewing buttons for dashboard pages
+Route::get('/dashboardesports', function () {
+    return view('dashboard');
+});
 
+Route::get('/Stages', function () {
+    return view('mainpage.Stages');
+});
+
+Route::get('/Match', function () {
+    return view('mainpage.Match');
+});
+
+Route::get('/Info', function () {
+    return view('mainpage.Info');
+});
+
+Route::get('/Teams', function () {
+    return view('mainpage.Teams');
+});
+
+Route::get('/Tournaments', function () {
+    return view('mainpage.Tournaments');
+});
 
 Route::middleware([
     'auth:sanctum',

@@ -15,17 +15,26 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 
         <!-- Styles -->
-        @livewireStyles
+        <style>
+            h1{font-weight: 700;
+    letter-spacing: -0.03em;
+    color:blue;
+}
+
+
+            </style>
     </head>
     <body class="font-sans antialiased">
         <x-banner />
 
-        <div class="min h-screen bg-red-100">
+        
+            </div>
             @livewire('navigation-menu')
 
             <!-- Page Heading -->
+            
             @if (isset($header))
-                <header class="bg-white shadow">
+                <header class="">
                     <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
                         {{ $header }}
                     </div>
