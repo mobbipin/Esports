@@ -1,0 +1,50 @@
+<script>
+    //  using fetch API
+    document.addEventListener('DOMContentLoaded', function() {
+        const playersData = [
+            { name: 'Player1', selectedHero: 'HeroA' },
+            { name: 'Player2', selectedHero: 'HeroB' },
+            { name: 'Player3', selectedHero: 'HeroC' },
+            { name: 'Player4', selectedHero: 'HeroD' },
+            { name: 'Player5', selectedHero: 'HeroE' },
+            { name: 'Player6', selectedHero: 'HeroF' },
+            { name: 'Player7', selectedHero: 'HeroG' },
+            { name: 'Player8', selectedHero: 'HeroH' },
+            { name: 'Player9', selectedHero: 'HeroI' },
+            { name: 'Player10', selectedHero: 'HeroJ' },
+        ];
+
+        // Map data
+        const mapData = { mapName: 'MapA' };
+
+        // Fetch API request for players
+        fetch('http://localhost:8000/api/start-game', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ players: playersData }),
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                // Handle the server response for players (success or error)
+            })
+            .catch(error => console.error('Error:', error));
+
+        // Fetch API request for map
+        fetch('http://localhost:8000/api/select-map', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(mapData),
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                // Handle the server response for the map (success or error)
+            })
+            .catch(error => console.error('Error:', error));
+    });
+</script>
