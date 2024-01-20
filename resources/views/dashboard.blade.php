@@ -1,9 +1,9 @@
 @extends('layouts.app')
   
-@section('title', 'Dashboard - Laravel Admin Panel With Login and Registration')
+@section('title', 'Dashboard For MOB ESPORTS APP')
   
 @section('contents')
   <div class="row">
-    Dashboard
+    Welcome To MOB Esports : A product By MOB Creatives For Esports Production
   </div>
 @endsection

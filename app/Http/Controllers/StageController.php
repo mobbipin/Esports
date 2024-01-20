@@ -3,18 +3,18 @@
 namespace App\Http\Controllers;
   
 use Illuminate\Http\Request;
-use App\Models\Product;
+use App\Models\stage;
  
-class ProductController extends Controller
+class StageController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $product = Product::orderBy('created_at', 'DESC')->get();
+        $stage = stage::orderBy('created_at', 'DESC')->get();
   
-        return view('products.index', compact('product'));
+        return view('stages.index', compact('stage'));
     }
   
     /**
@@ -22,7 +22,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        return view('products.create');
+        return view('stages.create');
     }
   
     /**
@@ -30,9 +30,9 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        Product::create($request->all());
+        stage::create($request->all());
  
-        return redirect()->route('products')->with('success', 'Product added successfully');
+        return redirect()->route('stages')->with('success', 'stage added successfully');
     }
   
     /**
@@ -40,9 +40,9 @@ class ProductController extends Controller
      */
     public function show(string $id)
     {
-        $product = Product::findOrFail($id);
+        $stage = stage::findOrFail($id);
   
-        return view('products.show', compact('product'));
+        return view('stages.show', compact('stage'));
     }
   
     /**
@@ -50,9 +50,9 @@ class ProductController extends Controller
      */
     public function edit(string $id)
     {
-        $product = Product::findOrFail($id);
+        $stage = stage::findOrFail($id);
   
-        return view('products.edit', compact('product'));
+        return view('stages.edit', compact('stage'));
     }
   
     /**
@@ -60,11 +60,11 @@ class ProductController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        $product = Product::findOrFail($id);
+        $stage = stage::findOrFail($id);
   
-        $product->update($request->all());
+        $stage->update($request->all());
   
-        return redirect()->route('products')->with('success', 'product updated successfully');
+        return redirect()->route('stages')->with('success', 'stage updated successfully');
     }
   
     /**
@@ -72,10 +72,10 @@ class ProductController extends Controller
      */
     public function destroy(string $id)
     {
-        $product = Product::findOrFail($id);
+        $stage = stage::findOrFail($id);
   
-        $product->delete();
+        $stage->delete();
   
-        return redirect()->route('products')->with('success', 'product deleted successfully');
+        return redirect()->route('stages')->with('success', 'stage deleted successfully');
     }
 }
