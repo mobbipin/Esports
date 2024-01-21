@@ -6,7 +6,6 @@
     <title>Tournament Creation</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-zz1vgrb+FtrDZ6nGAm6SvLmpP9+O0Xi6x72fcfXFS4TuMhD7CqL6ODWzr7yJ+mVb3EprFYoqck31SvoQHIiA4A==" crossorigin="anonymous" />
     <style>
-        /* Reset and General Styles */
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
@@ -15,7 +14,6 @@
             position: relative;
         }
 
-        /* Header Styles */
         .back-button {
             background-color: purple;
             color: #fff;
@@ -52,7 +50,6 @@
             background-color: #8a2be2;
         }
 
-        /* Form Container Styles */
         #form-container {
             max-width: 600px;
             margin: 20px auto;
@@ -62,12 +59,10 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        /* Form Styles */
         form {
             max-width: 100%;
         }
 
-        /* Form Fields Styles */
         label {
             display: block;
             margin-bottom: 8px;
@@ -150,9 +145,9 @@
 
         .square-box {
             position: relative;
-            width: calc(33.33% - 20px); /* 1/3 of container width with gap */
+            width: calc(33.33% - 20px);
             height: 0;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            padding-bottom: 56.25%;
             border: 1px solid #ccc;
             border-radius: 4px;
             overflow: hidden;
@@ -175,81 +170,61 @@
             font-size: 16px;
             font-weight: bold;
         }
-
     </style>
 </head>
 <body>
-    <!-- Header Links -->
     <a href="turu.html" class="back-button">Back to Tournament</a>
     <a href="home.html" class="home-button">Home</a>
-    
 
-    <!-- Tournament Form Container -->
     <div id="form-container">
         <form enctype="multipart/form-data" id="tournamentForm">
-            <!-- Tournament Name -->
             <label for="tournamentName">Tournament Name:</label>
             <input type="text" id="tournamentName" name="tournamentName" placeholder="Enter tournament name" required>
 
-            <!-- Location -->
             <label for="location">Location:</label>
             <input type="text" id="location" name="Location" placeholder="Enter location" required>
 
-            <!-- Date Container -->
             <div class="date-container">
-                <!-- Start Date -->
                 <label for="startDate">Start Date:</label>
                 <input type="date" id="startDate" name="startDate">
             
-                <!-- End Date -->
                 <label for="endDate">End Date:</label>
                 <input type="date" id="endDate" name="endDate">
             </div>
 
-            <!-- Number of Participants -->
             <label for="participants">Number of Participants:</label>
             <input type="number" id="participants" name="participants" min="1" required>
 
-            <!-- Additional Fields Container -->
             <div class="extra-fields-container">
-                <!-- Max Teams -->
                 <label for="maxTeams">Max Teams:</label>
                 <input type="text" id="maxTeams" name="maxTeams" placeholder="Enter max teams or use *">
 
-                <!-- Type -->
                 <label for="type">Type:</label>
                 <input type="text" id="type" name="type" placeholder="Enter type">
             </div>
 
-            <!-- Tournament Format -->
             <label for="format">Tournament Format:</label>
             <select id="format" name="format" required>
                 <option value="singleElimination">Single Elimination</option>
                 <option value="doubleElimination">Double Elimination</option>
-                <!-- Add more options as needed -->
             </select>
 
-            <!-- Map Pool -->
             <label for="mapPool">Map Pool:</label>
             <input type="text" id="mapPool" name="mapPool" placeholder="Enter comma-separated map names" required>
 
-            <!-- Image Upload Containers -->
             <div class="image-upload-container">
-                <!-- Image 1 -->
                 <div class="square-box">
                     <label for="imageUpload1" class="image-title"></label>
                     <input type="file" id="imageUpload1" name="imageUpload1" accept="image/*" onchange="previewImage(this, 'imagePreview1')">
                     <img id="imagePreview1" class="uploaded-image" alt="">
                 </div>
 
-                <!-- Image 2 -->
                 <div class="square-box">
                     <label for="imageUpload2" class="image-title"></label>
                     <input type="file" id="imageUpload2" name="imageUpload2" accept="image/*" onchange="previewImage(this, 'imagePreview2')">
                     <img id="imagePreview2" class="uploaded-image" alt="">
                 </div>
 
-                <!-- Image 3 -->
                 <div class="square-box">
                     <label for="imageUpload3" class="image-title"></label>
                     <input type="file" id="imageUpload3" name="imageUpload3" accept="image/*" onchange="previewImage(this, 'imagePreview3')">
@@ -257,18 +232,15 @@
                 </div>
             </div>
 
-            <!-- Description Box -->
             <div class="description-box">
                 <label for="description">Description* :</label>
                 <textarea id="description" name="description" placeholder="Enter description"></textarea>
             </div>
 
-            <!-- Save Button -->
             <button type="button" onclick="addTournament()">Save </button>
         </form>
     </div>
 
-    <!-- JavaScript Section -->
     <script>
         function previewImage(input, previewId) {
             const preview = document.getElementById(previewId);
