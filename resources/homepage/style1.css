@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    background-color:  #380000;
+}
+.service-wrapper{
+    padding: 5% 8%;
+}
+.service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    color: #fff;
+    font-size: 5rem;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: transparent;
+    letter-spacing: 4px;
+    background-color: rgb(224, 222, 214);
+    background: linear-gradient(8deg,rgb(202, 206, 208)0%,rgb(225, 229, 228)41%,rgb(157, 154, 158)100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
+h1:after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    height: 8px;
+    width: 80%;
+    border-radius: 8px;
+    border-color: rgba(213, 186, 186, 0.607);
+}
+h1 span{
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #ebdedd;
+    animation: anim 5s linear infinite;
+}
+@keyframes anim{
+    95%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        left: 88%;
+    }
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 80px;
+}
+
+.card {
+    height: 350px;
+    width: 370px;
+    background-color: #ebdedd;
+    padding: 3% 8%;
+    border: 0.3px solid #ebdedd;
+    border-radius: 8px;
+    transition: .6s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+.card:after {
+    content: "";
+    position: absolute;
+    top: 150%;
+    left: -200%;
+    width: 120%;
+    transform: rotate(50deg);
+    background-color: #fff;
+    height: 18px;
+    filter: blur(30px);
+    opacity: 0; /* Set initial opacity to 0 */
+    transition: opacity 1s; /* Include opacity in the transition */
+}
+
+.card:hover:after {
+    width: 225%;
+    top: 100%;
+    opacity: 0.5; /* Set the final opacity value */
+}
+
+
+
+.card i{
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 4.8rem;
+}
+.card h2{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.card p{
+    text-align: center;
+    width: 100%;
+    margin: 12px 0;
+    color: rgba(0, 0, 0, 0.6);
+}
+.card p:hover{
+    color: whitesmoke;
+}
+.card:hover{
+    background-color: transparent;
+    transform: translate(-8px);
+    border-color: black;
+}
+@media screen  and (max-width:1200px) {
+    .cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+}@media screen and  (max-width:900px){
+    .cards{
+        grid-template-columns: repeat(1,1fr);
+    }
+    h1{
+        font-size: 3.5rem;
+    }
+}
+button {
+    position: fixed;
+    bottom: 20px; /* Adjust the distance from the bottom as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #18f98f; /* Replace with the actual color code you want */
+    color: #fff; /* Replace with the desired text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.return-to-home {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .return-to-home:hover {
+    background-color: #0056b3;
+  }
+  
+  .icon {
+    margin-right: 5px;
+  }

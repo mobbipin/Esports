@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #380000; 
+}
+.portfolio-title {
+    color: #ebdedd; /* Replace with the actual color code you want */
+    text-align: center; /* Center the text */
+    font-size: 140px; /* Adjust the font size as needed */
+    margin-bottom: 100px; /* Add some space below the title */
+}
+.wrapper{
+    
+    position: absolute;
+    width: 40vw;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    background-color: #191a2b;
+}
+
+.container{
+    width: 28vmin;
+    height: 28vmin;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1em 0;
+    position: relative;
+    font-size: 16px;
+    border-radius: 0.5em;
+    background-color: #191a2b;
+    border-bottom: 10px solid #18f98f;
+}
+i {
+    color: #18f98f;
+    font-size: 2.5em;
+    text-align: center;
+}
+span.num{
+    color: #ffffff;
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+    font-size: 3em;
+}
+span.text{
+    color: #e0e0e0;
+    font-size: 1em;
+    text-align: center;
+    pad: 0.7em 0;
+    font-weight: 400;
+    line-height: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .wrapper{
+        width: 85;
+        
+    }
+    .container{
+        height: 26vmin;
+        width: 26vmin;
+        font-size: 12px;
+    }
+}
+@media screen  and (max-width:768px){
+    .wrapper{
+        width: 90vw;
+        flex-wrap:wrap;
+        gap: 50px;
+    }
+    .container{
+        width: calc(50% - 40px);
+        height: 30vmin;
+        font-size: 14px;
+    }
+}
+@media screen and(max-width: 480px) {
+    .wrapper{
+        gap: 15px;
+    }
+    .container{
+        width: 100%;
+        height: 25vmin;
+        font-size: 8px;
+    }
+    
+}
+button {
+    position: fixed;
+    bottom: 20px; /* Adjust the distance from the bottom as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #18f98f; /* Replace with the actual color code you want */
+    color: #fff; /* Replace with the desired text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.return-to-home {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .return-to-home:hover {
+    background-color: #0056b3;
+  }
+  
+  .icon {
+    margin-right: 5px;
+  }
