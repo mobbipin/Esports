@@ -1,18 +1,18 @@
 <?php
- 
+
 namespace App\Models;
- 
+
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
- 
-class tournament extends Model
+
+class Tournament extends Model
 {
     use HasFactory;
- 
-    protected $fillable = [
-        'title',
-        'price',
-        'tournament_code',
-        'description'
-    ];
+
+    protected $fillable = ['name', 'game_name', 'tournament_logo', 'tournament_details'];
+
+    public function stages()
+    {
+        return $this->hasMany(Stage::class);
+    }
 }

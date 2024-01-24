@@ -1,81 +1,71 @@
 <?php
-  
+
 namespace App\Http\Controllers;
-  
+
+use App\Models\Stage;
 use Illuminate\Http\Request;
-use App\Models\stage;
- 
+
 class StageController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
-    public function index()
+
+    public function index($tournamentId)
     {
-        $stage = stage::orderBy('created_at', 'DESC')->get();
-  
-        return view('stages.index', compact('stage'));
+        $stages = Stage::where('tournament_id', $tournamentId)->get();
+        return view('tournament.stages.index', compact('stages', 'tournamentId'));
     }
-  
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
+
+    public function create($tournamentId)
     {
-        return view('stages.create');
+        return view('tournament.stages.create', compact('tournamentId'));
     }
-  
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
+
+    public function store(Request $request, $tournamentId)
     {
-        stage::create($request->all());
- 
-        return redirect()->route('stages')->with('success', 'stage added successfully');
+        $request->validate([
+            'stage_name' => 'required|string|max:255',
+            'stage_day' => 'required|date',
+            'stage_time' => 'required|date_format:H:i',
+        ]);
+
+        $stageData = $request->all();
+        $stageData['tournament_id'] = $tournamentId;
+
+        Stage::create($stageData);
+
+        return redirect()->route('tournaments.stages.index', $tournamentId)->with('success', 'Stage created successfully.');
     }
-  
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
+
+    public function show($tournamentId, $stageId)
     {
-        $stage = stage::findOrFail($id);
-  
-        return view('stages.show', compact('stage'));
+        $stage = Stage::findOrFail($stageId);
+        return view('tournament.stages.show', compact('stage', 'tournamentId'));
     }
-  
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
+
+    public function edit($tournamentId, $stageId)
     {
-        $stage = stage::findOrFail($id);
-  
-        return view('stages.edit', compact('stage'));
+        $stage = Stage::findOrFail($stageId);
+        return view('tournament.stages.edit', compact('stage', 'tournamentId'));
     }
-  
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
+
+    public function update(Request $request, $tournamentId, $stageId)
     {
-        $stage = stage::findOrFail($id);
-  
+        $request->validate([
+            'stage_name' => 'required|string|max:255',
+            'stage_day' => 'required|date',
+            'stage_time' => 'required|date_format:H:i',
+        ]);
+
+        $stage = Stage::findOrFail($stageId);
         $stage->update($request->all());
-  
-        return redirect()->route('stages')->with('success', 'stage updated successfully');
+
+        return redirect()->route('tournament.stages.index', $tournamentId)->with('success', 'Stage updated successfully.');
     }
-  
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
+
+    public function destroy($tournamentId, $stageId)
     {
-        $stage = stage::findOrFail($id);
-  
+        $stage = Stage::findOrFail($stageId);
         $stage->delete();
-  
-        return redirect()->route('stages')->with('success', 'stage deleted successfully');
+
+        return redirect()->route('tournament.stages.index', $tournamentId)->with('success', 'Stage deleted successfully.');
     }
 }

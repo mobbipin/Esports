@@ -1,81 +1,92 @@
 <?php
-  
+
 namespace App\Http\Controllers;
-  
+
+use App\Models\Tournament;
 use Illuminate\Http\Request;
-use App\Models\tournament;
- 
-class tournamentController extends Controller
+
+class TournamentController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
     public function index()
     {
-        $tournament = tournament::orderBy('created_at', 'DESC')->get();
-  
-        return view('tournaments.index', compact('tournament'));
+        $tournaments = Tournament::all();
+        return view('tournament.index', compact('tournaments'));
     }
-  
-    /**
-     * Show the form for creating a new resource.
-     */
+
     public function create()
     {
-        return view('tournaments.create');
+        return view('tournament.create');
     }
-  
-    /**
-     * Store a newly created resource in storage.
-     */
+
     public function store(Request $request)
     {
-        tournament::create($request->all());
- 
-        return redirect()->route('tournaments')->with('success', 'tournament added successfully');
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'game_name' => 'required|string|max:255',
+            'tournament_logo' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
+            'tournament_details' => 'required|string',
+        ]);
+
+        $tournamentData = $request->all();
+
+        if ($request->hasFile('tournament_logo')) {
+            $logoPath = $request->file('tournament_logo')->store('logos', 'public');
+            $tournamentData['tournament_logo'] = $logoPath;
+        }
+
+        Tournament::create($tournamentData);
+
+        return redirect()->route('tournaments.index')->with('success', 'Tournament created successfully.');
     }
-  
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
+
+    public function show($id)
     {
-        $tournament = tournament::findOrFail($id);
-  
-        return view('tournaments.show', compact('tournament'));
+        $tournament = Tournament::findOrFail($id);
+        return view('tournament.show', compact('tournament'));
     }
-  
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
+
+    public function edit($id)
     {
-        $tournament = tournament::findOrFail($id);
-  
-        return view('tournaments.edit', compact('tournament'));
+        $tournament = Tournament::findOrFail($id);
+        return view('tournament.edit', compact('tournament'));
     }
-  
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
+
+    public function update(Request $request, $id)
     {
-        $tournament = tournament::findOrFail($id);
-  
-        $tournament->update($request->all());
-  
-        return redirect()->route('tournaments')->with('success', 'tournament updated successfully');
+        $tournament = Tournament::findOrFail($id);
+
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'game_name' => 'required|string|max:255',
+            'tournament_logo' => 'image|mimes:jpeg,png,jpg,gif|max:2048', // Adjust as needed
+            'tournament_details' => 'required|string',
+        ]);
+
+        $tournamentData = $request->except('tournament_logo');
+
+        if ($request->hasFile('tournament_logo')) {
+            // Delete old logo if exists
+            if ($tournament->tournament_logo) {
+                unlink(public_path("storage/{$tournament->tournament_logo}"));
+            }
+
+            $logoPath = $request->file('tournament_logo')->store('logos', 'public');
+            $tournamentData['tournament_logo'] = $logoPath;
+        }
+
+        $tournament->update($tournamentData);
+
+        return redirect()->route('tournaments.index')->with('success', 'Tournament updated successfully.');
     }
-  
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
+
+    public function destroy($id)
     {
-        $tournament = tournament::findOrFail($id);
-  
+        $tournament = Tournament::findOrFail($id);
+
+    
+
         $tournament->delete();
-  
-        return redirect()->route('tournaments')->with('success', 'tournament deleted successfully');
+
+        return redirect()->route('tournaments.index')->with('success', 'Tournament deleted successfully.');
     }
 }
