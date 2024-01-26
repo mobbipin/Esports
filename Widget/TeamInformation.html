@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    .team-container {
+      display: none; /* Initially hide the team containers */
+      text-align: center;
+      padding: 40px;
+      border: 2px solid #ccc;
+      border-radius: 50px;
+      background-color: #528aba; /* Light Blue */
+      opacity: 0;
+      transform: translateX(-100%);
+      animation: fadeAndSlideIn 1.5s ease-out forwards;
+    }
+
+    img {
+      max-width: 150px;
+      max-height: 150px;
+      margin-bottom: 20px;
+    }
+
+    .icon {
+      margin-right: 8px;
+    }
+
+    h1, h2 {
+      font-size: 24px;
+      margin: 10px 0;
+    }
+
+    @keyframes fadeAndSlideIn {
+      0% {
+        opacity: 0;
+        transform: translateX(-100%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    #teamInfoButton {
+      position: absolute; /* Set button position to absolute */
+      top: 20px; /* Adjust top position as needed */
+      left: 20px; /* Adjust left position as needed */
+      font-size: 18px;
+      padding: 10px;
+      cursor: pointer;
+    }
+  </style>
+  <title>Team Information</title>
+</head>
+<body>
+
+  <button id="teamInfoButton">Team Information</button>
+
+  <div class="team-container" id="team1">
+    <img src="ap.png" alt="Team 1 Logo">
+    <h1>APEKS</h1>
+    
+    <div class="container">
+      <h2><span class="icon"><i class="fas fa-user"></i></span> APEKS PLayer1</h2>
+      <h2><span class="icon"><i class="fas fa-user"></i></span> APEKS Player2</h2>
+      <h2><span class="icon"><i class="fas fa-user"></i></span> APEKS Player3</h2>
+      <h2><span class="icon"><i class="fas fa-user"></i></span> APEKS Player4</h2>
+      <h2><span class="icon"><i class="fas fa-user"></i></span> APEKS Player5</h2>
+    </div>
+  </div>
+
+  <div class="team-container" id="team2">
+    <img src="fn.png" alt="Team 2 Logo">
+    <h1>FNATIC</h1>
+    
+    <div class="container">
+      <h2><span class="icon"><i class="fas fa-user"></i></span> FNATIC Player1</h2>
+      <h2><span class="icon"><i class="fas fa-user"></i></span> FNATIC Plater2</h2>
+      <h2><span class="icon"><i class="fas fa-user"></i></span> FNATIC Player3</h2>
+      <h2><span class="icon"><i class="fas fa-user"></i></span> FNATIC Player4</h2>
+      <h2><span class="icon"><i class="fas fa-user"></i></span> FNATIC Player5</h2>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('teamInfoButton').addEventListener('click', function() {
+      // Toggle the display property of team containers
+      document.getElementById('team1').style.display = document.getElementById('team1').style.display === 'none' ? 'block' : 'none';
+      document.getElementById('team2').style.display = document.getElementById('team2').style.display === 'none' ? 'block' : 'none';
+    });
+  </script>
+
+</body>
+</html>
