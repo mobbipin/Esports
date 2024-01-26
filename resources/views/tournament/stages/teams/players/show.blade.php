@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Player Details')
+@section('title', $player->name)
 
 @section('contents')
     <div class="container">
@@ -22,7 +22,7 @@
                 @endif
             </dd>
         </dl>
-    
+
         <a href="{{ route('tournaments.stages.teams.players.index', ['tournamentId' => $tournamentId, 'stageId' => $stageId, 'teamId' => $teamId]) }}" class="btn btn-secondary">Back to Players</a>
     </div>
 @endsection

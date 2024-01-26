@@ -3,16 +3,17 @@
 namespace App\Http\Controllers;
 
 use App\Models\Player;
+use App\Models\Team;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
 
 class PlayerController extends Controller
 {
     public function index($tournamentId, $stageId, $teamId)
-    {
-        $players = Player::where('team_id', $teamId)->get();
-        return view('tournament.stages.teams.players.index', compact('players', 'tournamentId', 'stageId', 'teamId'));
-    }
+{
+    $players = Player::where('team_id', $teamId)->get();
+    return view('tournament.stages.teams.players.index', compact('players', 'tournamentId', 'stageId', 'teamId'));
+}
+
 
     public function create($tournamentId, $stageId, $teamId)
     {
@@ -37,7 +38,11 @@ class PlayerController extends Controller
 
         Player::create($playerData);
 
-        return redirect()->route('tournaments.stages.teams.players.index', ['tournamentId' => $tournamentId, 'stageId' => $stageId, 'teamId' => $teamId])->with('success', 'Player created successfully.');
+        return redirect()->route('tournaments.stages.teams.players.index', [
+            'tournamentId' => $tournamentId,
+            'stageId' => $stageId,
+            'teamId' => $teamId,
+        ])->with('success', 'Player added successfully.');
     }
 
     public function show($tournamentId, $stageId, $teamId, $playerId)
@@ -61,12 +66,11 @@ class PlayerController extends Controller
         ]);
 
         $player = Player::findOrFail($playerId);
-
         $playerData = $request->except('photo');
 
         if ($request->hasFile('photo')) {
             if ($player->photo) {
-                Storage::disk('public')->delete($player->photo);
+                unlink(public_path("storage/{$player->photo}"));
             }
 
             $photoPath = $request->file('photo')->store('photos', 'public');
@@ -75,19 +79,22 @@ class PlayerController extends Controller
 
         $player->update($playerData);
 
-        return redirect()->route('tournaments.stages.teams.players.index', ['tournamentId' => $tournamentId, 'stageId' => $stageId, 'teamId' => $teamId])->with('success', 'Player updated successfully.');
+        return redirect()->route('tournaments.stages.teams.players.index', [
+            'tournamentId' => $tournamentId,
+            'stageId' => $stageId,
+            'teamId' => $teamId,
+        ])->with('success', 'Player updated successfully.');
     }
 
     public function destroy($tournamentId, $stageId, $teamId, $playerId)
     {
         $player = Player::findOrFail($playerId);
-
-        if ($player->photo) {
-            Storage::disk('public')->delete($player->photo);
-        }
-
         $player->delete();
 
-        return redirect()->route('tournaments.stages.teams.players.index', ['tournamentId' => $tournamentId, 'stageId' => $stageId, 'teamId' => $teamId])->with('success', 'Player deleted successfully.');
+        return redirect()->route('tournaments.stages.teams.players.index', [
+            'tournamentId' => $tournamentId,
+            'stageId' => $stageId,
+            'teamId' => $teamId,
+        ])->with('success', 'Player deleted successfully.');
     }
 }

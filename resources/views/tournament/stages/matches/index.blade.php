@@ -37,8 +37,20 @@
                             <td>{{ $loop->iteration }}</td>
                             <td>{{ $match->match_no }}</td>
                             <td>{{ $match->match_name }}</td>
-                            <td>{{ $match->teamA->name }}</td>
-                            <td>{{ $match->teamB->name }}</td>
+                            <td>
+                                @if($match->team1)
+                                    {{ $match->team1->name }}
+                                @else
+                                    N/A
+                                @endif
+                            </td>
+                            <td>
+                                @if($match->team2)
+                                    {{ $match->team2->name }}
+                                @else
+                                    N/A
+                                @endif
+                            </td>
                             <td>{{ $match->playing_map_name }}</td>
                             <td>
                                 @if($match->playing_map_photo)
@@ -51,7 +63,11 @@
                                 <div class="btn-group" role="group" aria-label="Basic example">
                                     <a href="{{ route('tournaments.stages.matches.show', ['tournamentId' => $tournamentId, 'stageId' => $stageId, 'matchId' => $match->id]) }}" type="button" class="btn btn-secondary">Detail</a>
                                     <a href="{{ route('tournaments.stages.matches.edit', ['tournamentId' => $tournamentId, 'stageId' => $stageId, 'matchId' => $match->id]) }}" type="button" class="btn btn-warning">Edit</a>
-                                    <!-- You can add a delete button here as well -->
+                                    <form action="{{ route('tournaments.stages.matches.destroy', ['tournamentId' => $tournamentId, 'stageId' => $stageId, 'matchId' => $match->id]) }}" method="POST">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="btn btn-danger">Delete</button>
+                                    </form>
                                 </div>
                             </td>
                         </tr>

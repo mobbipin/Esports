@@ -93,6 +93,20 @@ Route::middleware('auth')->group(function () {
         ->name('tournaments.stages.matches.destroy');
 
 
+
+
+
+    Route::get('/tournaments/{tournamentId}/stages/{stageId}/matches/{matchId}/teaminfo', [MatchesController::class, 'teamInfo'])
+        ->name('tournaments.stages.matches.teaminfo');
+
+
+
+    
+    Route::get('/tournaments/{tournamentId}/stages/{stageId}/matches/{matchId}/teaminfo', [MatchesController::class, 'teamInfo'])
+        ->name('tournaments.stages.matches.teaminfo');
+    Route::get('/tournament/{tournamentId}/stage/{stageId}/match/{matchId}/teaminfo', 'MatchesController@teamInfo')->name('teaminfo');
+
+
     //routes for players 
     Route::get('/tournaments/{tournamentId}/stages/{stageId}/teams/{teamId}/players', [PlayerController::class, 'index'])
         ->name('tournaments.stages.teams.players.index');

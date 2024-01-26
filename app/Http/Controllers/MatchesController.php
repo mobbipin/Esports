@@ -8,6 +8,26 @@ use Illuminate\Http\Request;
 
 class MatchesController extends Controller
 {
+    public function teamInfo($tournamentId, $stageId, $matchId)
+    {
+        // Fetch the match data based on IDs
+        $match = Matches::find($matchId);
+
+        // Check if the match exists
+        if (!$match) {
+            abort(404); // Or handle it in a way that makes sense for your application
+        }
+
+        // You need to adjust these relationships based on your actual data structure
+        // Assuming you have a Team model with a relationship to Player
+        $team1 = $match->team1; // Adjust this based on your actual relationship name
+        $team2 = $match->team2; // Adjust this based on your actual relationship name
+
+        // Render the view with match, team1, and team2 data
+        return view('tournament.stages.teams.teaminfo', compact('match', 'team1', 'team2'));
+    }
+
+
     public function index($tournamentId, $stageId)
     {
         $matches = Matches::where('stage_id', $stageId)->get();
@@ -93,9 +113,9 @@ class MatchesController extends Controller
         $match = Matches::findOrFail($matchId);
 
         // Delete playing map photo if exists
-        if ($match->playing_map_photo) {
-            unlink(public_path("storage/{$match->playing_map_photo}"));
-        }
+        // if ($match->playing_map_photo) {
+        //     unlink(public_path("storage/{$match->playing_map_photo}"));
+        // }
 
         $match->delete();
 

@@ -25,15 +25,24 @@ class Matches extends Model
         return $this->belongsTo(Stage::class);
     }
 
-    public function teamA()
+    // public function teamA()
+    // {
+    //     return $this->belongsTo(Team::class, 'team_a_id');
+    // }
+
+    // public function teamB()
+    // {
+    //     return $this->belongsTo(Team::class, 'team_b_id');
+    // }
+
+    public function team1()
     {
         return $this->belongsTo(Team::class, 'team_a_id');
     }
 
-    public function teamB()
+    public function team2()
     {
         return $this->belongsTo(Team::class, 'team_b_id');
     }
-
-    // ... other methods or relationships
 }
+
