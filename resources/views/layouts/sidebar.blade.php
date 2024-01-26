@@ -18,12 +18,7 @@
         <span>Dashboard</span></a>
     </li>
     
-    <li class="nav-item">
-      <a class="nav-link" href="">
-        {{-- {{ route('stage') }} --}}
-        <i class="fas fa-fw fa-tachometer-alt"></i>
-        <span>Tournaments</span></a>
-    </li>
+
 
     <li class="nav-item">
       <a class="nav-link" href="{{ route('tournaments.index') }}">
@@ -31,24 +26,6 @@
         <span>Tournaments</span></a>
     </li>
 
-    <li class="nav-item">
-      <a class="nav-link" href="">
-        <i class="fas fa-fw fa-tachometer-alt"></i>
-        <span>Teams</span></a>
-    </li>
-
-    <li class="nav-item">
-      <a class="nav-link" href="">
-        <i class="fas fa-fw fa-tachometer-alt"></i>
-        <span>Matches</span></a>
-    </li>
-
-    <li class="nav-item">
-      <a class="nav-link" href="">
-        <i class="fas fa-fw fa-tachometer-alt"></i>
-        <span>Widgets</span></a>
-    </li>
-    
     <li class="nav-item">
       <a class="nav-link" href="/profile">
         <i class="fas fa-fw fa-tachometer-alt"></i>
