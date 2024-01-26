@@ -6,7 +6,7 @@
     <div class="container">
         <h1 class="mb-0">Edit Team</h1>
         <hr />
-        <form action="{{ route('tournaments.stages.teams.update', [$team->stage_id, $team->id]) }}" method="post" enctype="multipart/form-data">
+        <form action="{{ route('tournaments.stages.teams.update', ['tournamentId' => $tournamentId, 'stageId' => $stageId, 'teamId' => $team->id]) }}" method="post" enctype="multipart/form-data">
             @csrf
             @method('PUT')
             <div class="mb-3">

@@ -36,6 +36,8 @@
                             <td>{{ $team->description }}</td>
                             <td>
                                 <div class="btn-group" role="group" aria-label="Basic example">
+
+                                    <a href="{{ route('tournaments.stages.teams.players.index', ['tournamentId' => $tournamentId, 'stageId' => $stageId, 'teamId' => $team->id]) }}" type="button" class="btn btn-secondary">Players</a>
                                     <a href="{{ route('tournaments.stages.teams.show', ['tournamentId' => $tournamentId, 'stageId' => $stageId, 'teamId' => $team->id]) }}" type="button" class="btn btn-secondary">Detail</a>
                                     <a href="{{ route('tournaments.stages.teams.edit', ['tournamentId' => $tournamentId, 'stageId' => $stageId, 'teamId' => $team->id]) }}" type="button" class="btn btn-warning">Edit</a>
                                     <a href="{{ route('tournaments.stages.teams.destroy', ['tournamentId' => $tournamentId, 'stageId' => $stageId, 'teamId' => $team->id]) }}" type="button" class="btn btn-danger p-0">Delete</a>

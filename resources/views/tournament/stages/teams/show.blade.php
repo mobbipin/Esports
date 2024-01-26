@@ -25,9 +25,6 @@
             <dt class="col-sm-3">Team Description</dt>
             <dd class="col-sm-9">{{ $team->description }}</dd>
         </dl>
-    
-        <a href="{{ route('tournaments.stages.teams.index', ['tournamentId' => $team->tournament_id, 'stageId' => $team->stage_id]) }}" class="btn btn-secondary">Back to Teams</a>
-
 
     </div>
 @endsection

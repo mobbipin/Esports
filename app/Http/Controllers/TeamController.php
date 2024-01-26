@@ -15,51 +15,51 @@ class TeamController extends Controller
         return view('tournament.stages.teams.index', compact('teams', 'stageId', 'tournamentId'));
     }
 
-public function create($tournamentId, $stageId)
-{
-    return view('tournament.stages.teams.create', compact('tournamentId', 'stageId'));
-}
-
-public function store(Request $request, $tournamentId, $stageId)
-{
-    $request->validate([
-        'name' => 'required|string|max:255',
-        'tag' => 'required|string|max:255',
-        'logo' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048', 
-        'description' => 'required|string',
-    ]);
-
-    $teamData = $request->except('logo');
-    $teamData['stage_id'] = $stageId;
-
-    if ($request->hasFile('logo')) {
-        $logoPath = $request->file('logo')->store('logos', 'public');
-        $teamData['logo'] = $logoPath;
+    public function create($tournamentId, $stageId)
+    {
+        return view('tournament.stages.teams.create', compact('tournamentId', 'stageId'));
     }
 
-    Team::create($teamData);
-
-    return redirect()->route('tournaments.stages.teams.index', ['tournamentId' => $tournamentId, 'stageId' => $stageId])->with('success', 'Team created successfully.');
-
-}
-    public function show($tournamentId, $stageId, $teamId)
-{
-    $team = Team::findOrFail($teamId);
-    return view('tournament.stages.teams.show', compact('team', 'tournamentId', 'stageId'));
-}
-
-    public function edit($tournamentId, $stageId, $teamId)
-{
-    $team = Team::findOrFail($teamId);
-    return view('tournament.stages.teams.edit', compact('team', 'tournamentId', 'stageId'));
-}
-
-    public function update(Request $request, $stageId, $teamId)
+    public function store(Request $request, $tournamentId, $stageId)
     {
         $request->validate([
             'name' => 'required|string|max:255',
             'tag' => 'required|string|max:255',
-            'logo' => 'image|mimes:jpeg,png,jpg,gif|max:2048', // Adjust as needed
+            'logo' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'description' => 'required|string',
+        ]);
+
+        $teamData = $request->except('logo');
+        $teamData['stage_id'] = $stageId;
+
+        if ($request->hasFile('logo')) {
+            $logoPath = $request->file('logo')->store('logos', 'public');
+            $teamData['logo'] = $logoPath;
+        }
+
+        Team::create($teamData);
+
+        return redirect()->route('tournaments.stages.teams.index', ['tournamentId' => $tournamentId, 'stageId' => $stageId])->with('success', 'Team created successfully.');
+    }
+
+    public function show($tournamentId, $stageId, $teamId)
+    {
+        $team = Team::findOrFail($teamId);
+        return view('tournament.stages.teams.show', compact('team', 'tournamentId', 'stageId'));
+    }
+
+    public function edit($tournamentId, $stageId, $teamId)
+    {
+        $team = Team::findOrFail($teamId);
+        return view('tournament.stages.teams.edit', compact('team', 'tournamentId', 'stageId'));
+    }
+
+    public function update(Request $request, $tournamentId, $stageId, $teamId)
+    {
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'tag' => 'required|string|max:255',
+            'logo' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
             'description' => 'required|string',
         ]);
 
@@ -68,7 +68,6 @@ public function store(Request $request, $tournamentId, $stageId)
         $teamData = $request->except('logo');
 
         if ($request->hasFile('logo')) {
-            // Delete old logo if exists
             if ($team->logo) {
                 unlink(public_path("storage/{$team->logo}"));
             }
@@ -80,17 +79,14 @@ public function store(Request $request, $tournamentId, $stageId)
         $team->update($teamData);
 
         return redirect()->route('tournaments.stages.teams.index', ['tournamentId' => $tournamentId, 'stageId' => $stageId])->with('success', 'Team updated successfully.');
-
-
     }
 
-    public function destroy($stageId, $teamId)
+    public function destroy($tournamentId, $stageId, $teamId)
     {
         $team = Team::findOrFail($teamId);
 
         $team->delete();
 
         return redirect()->route('tournaments.stages.teams.index', ['tournamentId' => $tournamentId, 'stageId' => $stageId])->with('success', 'Team deleted successfully.');
-
     }
 }

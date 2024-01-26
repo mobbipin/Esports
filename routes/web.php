@@ -7,6 +7,7 @@ use App\Http\Controllers\TournamentController;
 use App\Http\Controllers\TournamentController1;
 use App\Http\Controllers\TeamController;
 use App\Http\Controllers\MatchesController;
+use App\Http\Controllers\PlayerController;
 
  
 Route::get('/', function () {
@@ -52,8 +53,7 @@ Route::middleware('auth')->group(function () {
     ->name('tournaments.stages.teams.index');
 
     Route::get('/tournaments/{tournamentId}/stages/{stageId}/teams/create', [TeamController::class, 'create'])
-    ->name('tournaments.stages.teams.create');
-
+        ->name('tournaments.stages.teams.create');
 
     Route::post('/tournaments/{tournamentId}/stages/{stageId}/teams', [TeamController::class, 'store'])
         ->name('tournaments.stages.teams.store');
@@ -92,5 +92,29 @@ Route::middleware('auth')->group(function () {
     Route::delete('/tournaments/{tournamentId}/stages/{stageId}/matches/{matchId}', [MatchesController::class, 'destroy'])
         ->name('tournaments.stages.matches.destroy');
 
+
+    //routes for players 
+    Route::get('/tournaments/{tournamentId}/stages/{stageId}/teams/{teamId}/players', [PlayerController::class, 'index'])
+        ->name('tournaments.stages.teams.players.index');
+
+    Route::get('/tournaments/{tournamentId}/stages/{stageId}/teams/{teamId}/players/create', [PlayerController::class, 'create'])
+        ->name('tournaments.stages.teams.players.create');
+
+    Route::post('/tournaments/{tournamentId}/stages/{stageId}/teams/{teamId}/players', [PlayerController::class, 'store'])
+        ->name('tournaments.stages.teams.players.store');
+
+    Route::get('/tournaments/{tournamentId}/stages/{stageId}/teams/{teamId}/players/{playerId}', [PlayerController::class, 'show'])
+        ->name('tournaments.stages.teams.players.show');
+
+    Route::get('/tournaments/{tournamentId}/stages/{stageId}/teams/{teamId}/players/{playerId}/edit', [PlayerController::class, 'edit'])
+        ->name('tournaments.stages.teams.players.edit');
+
+    Route::put('/tournaments/{tournamentId}/stages/{stageId}/teams/{teamId}/players/{playerId}', [PlayerController::class, 'update'])
+        ->name('tournaments.stages.teams.players.update');
+
+    Route::delete('/tournaments/{tournamentId}/stages/{stageId}/teams/{teamId}/players/{playerId}', [PlayerController::class, 'destroy'])
+        ->name('tournaments.stages.teams.players.destroy');
+
+    //auth 
     Route::get('/profile', [App\Http\Controllers\AuthController::class, 'profile'])->name('profile');
 });
