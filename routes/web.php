@@ -13,6 +13,12 @@ use App\Http\Controllers\PlayerController;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::view("/services", 'services');
+Route::view("/contactus", 'contactus');
+Route::view("/features", 'features');
+Route::view("/portfolio", 'portfolio');
+
  
 Route::controller(AuthController::class)->group(function () {
     Route::get('register', 'register')->name('register');
