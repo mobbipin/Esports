@@ -17,3 +17,7 @@ function goToHomepage() {
     // Redirect to the homepage (index.html)
     window.location.href = 'index.html';
 }
+// Example: Changing the heading text after 3 seconds
+setTimeout(function () {
+    document.getElementById('tournament-container').getElementsByTagName('h2')[0].innerText = 'Updated Heading';
+}, 3000);

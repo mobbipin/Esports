@@ -73,18 +73,6 @@ section {
     text-align: center;
 }
 
-/* Learn more button */
-.btn-primary {
-    background-color: #98493e; /* Bootstrap primary color for the button */
-    border-color: #742423;
-    display: block; /* Make the button a block-level element for centering */
-    margin: 0 auto; /* Center the button within its container */
-}
-
-.btn-primary:hover {
-    background-color: #d63131; /* Slightly darker color on hover */
-    border-color: #510e0e;
-}
 
 /* Logo in Navbar */
 nav .logo {
@@ -122,9 +110,26 @@ form.d-flex {
     border-color: #ff7f7f; /* Lighter red border on hover */
 }
 
+/* login/register btn */
 .bg-loggin{
     background-color: #380000;
 }
 .bg-reggister{
     background-color: #380000;
+}
+.btn-lg{
+    color:#ffffff;
+    background-color:#000000;
+    border-color:#ffffff;
+}
+.btn-lg:hover{
+    color:#000000;
+    background-color:#ffffff;
+    border-color:#000000;
+}
+.btn-lg:focus{
+    color:#040404;
+    background-color:#ffffff;
+    border-color:#000000;
+    box-shadow:0 0 0 .2rem rgba(170, 168, 168, 0.5);
 }
