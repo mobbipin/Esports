@@ -1,4 +1,5 @@
 <!-- Breadcrumb Navigation -->
+
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
         @foreach (request()->segments() as $segment)

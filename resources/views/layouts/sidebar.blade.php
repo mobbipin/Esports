@@ -1,9 +1,10 @@
-<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<ul class="navbar-nav bg-sidebar sidebar sidebar-dark accordion" id="accordionSidebar">
   
     <!-- Sidebar - Brand -->
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="dashboard">
-      <div class="sidebar-brand-icon rotate-n-15">
-        <i class="fas fa-laugh-wink"></i>
+      <div class="sidebar-brand-icon">
+      <i class="fa-solid fa-m"></i>
       </div>
       <div class="sidebar-brand-text mx-3"> MOB ESPORTS </div>
     </a>
@@ -22,13 +23,13 @@
 
     <li class="nav-item">
       <a class="nav-link" href="{{ route('tournaments.index') }}">
-        <i class="fas fa-fw fa-tachometer-alt"></i>
+      <i class="fa-solid fa-gamepad"></i>
         <span>Tournaments</span></a>
     </li>
 
     <li class="nav-item">
       <a class="nav-link" href="/profile">
-        <i class="fas fa-fw fa-tachometer-alt"></i>
+      <i class="fa-solid fa-address-card"></i>
         <span>Profile</span></a>
     </li>
     
