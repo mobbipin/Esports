@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .full-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .header-container {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      color: white;
+      font-size: 18px;
+      text-transform: uppercase;
+      font-weight: bold;
+      z-index: 2; 
+    }
+
+    .rectangle {
+      position: fixed;
+      width: 200px;
+      height: 400px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: rgba(0, 0, 0, 0.139);
+      margin: 0 10px 10px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      position: relative;
+    }
+
+    .small-box {
+      position: absolute;
+      height: 80px;
+    }
+
+    .image-box {
+      top: 20px;
+      left: 50px;
+      margin-bottom: 50px;
+    }
+
+    
+
+    .background-box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .points {
+      position: absolute;
+      top: 70%;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      color: white;
+      font-size: 15px;
+    }
+
+    .map-container {
+      position: absolute;
+      bottom: -8px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      color: white;
+      background-color: rgba(0, 180, 216, 0.7);
+      padding: 3px;
+      border-radius: 3px;
+      font-size: 8px;
+      width: 30%;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="full-screen">
+    <div class="header-container">
+    </div>
+    <div class="rectangle" style="background-image: url('map1.jpg');">
+      <div class="small-box image-box">
+        <img src="tsm.png" alt="Image 1">
+      </div>
+      <div class="small-box background-box">
+        <img src="valorant.png" alt="Image 2">
+      </div>
+      <div class="points">
+        <h2>TOTAL PTS: </h2>
+        <h3>100</h3>
+      </div>
+      <div class="map-container">
+        <h2 class="map">ICE BOX</h2>
+      </div>
+    </div>
+
+    <div class="header-container">
+    </div>
+    <div class="rectangle" style="background-image: url('haven.jpg');">
+      <div class="small-box image-box">
+        <img src="c9.png" alt="Image 1">
+      </div>
+      <div class="small-box background-box">
+        <img src="valorant.png" alt="Image 2">
+      </div>
+      <div class="points">
+        <h2>TOTAL PTS: </h2>
+        <h3>100</h3>
+      </div>
+      <div class="map-container">
+        <h2 class="map">HAVEN</h2>
+      </div>
+    </div>
+
+    <div class="header-container">
+    </div>
+    <div class="rectangle" style="background-image: url('bind.jpg');">
+      <div class="small-box image-box">
+        <img src="tl.png" alt="Image 1">
+      </div>
+      <div class="small-box background-box">
+        <img src="valorant.png" alt="Image 2">
+      </div>
+      <div class="points">
+        <h2>TOTAL PTS: </h2>
+        <h3>100</h3>
+      </div>
+      <div class="map-container">
+        <h2 class="map">BIND</h2>
+      </div>
+    </div>
+
+
+
+    
+
+
+
+
+  </div>
+</body>
+
+</html>
