@@ -1,7 +1,5 @@
 @extends('layouts.app')
 
-@section('title', 'List of Stages')
-
 @section('contents')
     <div class="container">
         <h1 class="mb-0">List of Stages</h1>
@@ -13,7 +11,7 @@
                     <tr>
                         <th>#</th>
                         <th>Stage Name</th>
-                        <th>Stage Day</th>
+                        <th>Stage Day</th> 
                         <th>Stage Time</th>
                         <th>Action</th>
                     </tr>

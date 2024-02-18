@@ -1,7 +1,5 @@
 @extends('layouts.app')
 
-@section('title', 'Match Details')
-
 @section('contents')
     <div class="container">
         <h1 class="mb-0">{{ $match->match_name }} Details</h1>

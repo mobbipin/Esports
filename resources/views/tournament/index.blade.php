@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'List Tournaments')
+@section('title', 'TOURNAMENT LOG')
+
 
 @section('contents')
     <div class="d-flex align-items-center justify-content-between">
@@ -41,7 +42,7 @@
                         <td class="align-middle">{{ $tournament->tournament_details }}</td>
                         <td class="align-middle">
                             <div class="btn-group" role="group" aria-label="Basic example">
-                                <a href="{{ route('tournaments.stages.index', $tournament->id) }}" type="button" class="btn btn-secondary">Enter</a>
+                                <a href="{{ route('tournaments.stages.index', $tournament->id) }}" type="button" class="btn btn-enter">Enter</a>
                                 <a href="{{ route('tournaments.show', $tournament->id) }}" type="button" class="btn btn-secondary">Detail</a>
                                 <a href="{{ route('tournaments.edit', $tournament->id)}}" type="button" class="btn btn-warning">Edit</a>
                                 <form action="{{ route('tournaments.destroy', $tournament->id) }}" method="POST" type="button" class="btn btn-danger p-0" onsubmit="return confirm('Delete?')">

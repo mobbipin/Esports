@@ -1,0 +1,118 @@
+/* Updated Styles for the Font and Background */
+body {
+    font-family: 'Proxima Nova Regular', sans-serif; /* Set Proxima Nova Regular as the default font */
+    background-color: #380000; /* Dark background color */
+    color: #ffffff; /* White text color for better readability on the dark background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Set a minimum height to ensure content is centered vertically */
+    margin: 0; /* Remove default margin */
+}
+
+/* Additional Styles for Centering */
+section {
+    text-align: center; /* Center text within the section */
+}
+
+/* Navbar Brand */
+.navbar-brand {
+    color: #ffffff; /* White text color for the navbar brand */
+}
+
+.navbar-expand-lg{
+    border-radius: 5px;
+   
+}
+
+/* Navbar */
+.navbar {
+    width: 1000px; /* Set the height to your desired value */
+    top:8px;
+    right: 70px;
+    
+}
+
+/* Navbar Links */
+.navbar-nav {
+    text-align: 90px;
+}
+
+.navbar-nav .nav-link {
+    padding: 10px;
+    text-align: 90px; /* Center-align the text */
+}
+
+/* Jumbotron Container */
+.jumbotron {
+    margin-top: 70px;
+    background-color: transparent; /* Transparent background for the jumbotron */
+}
+
+/* Header */
+.display-4 {
+    font-size: 5rem ;
+    color: #ffffff; /* White text color for the header */
+    font-weight: bold; /* Set the font weight to bold */
+    text-align: center; /* Center the text within the header */
+}
+.navbar-nav .nav-link {
+    padding: 10px;
+}
+
+/* Lead text */
+.lead {
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-align: center; /* Center the text within the lead */
+}
+.led{
+    font-size: 3rem;
+    color: whitesmoke;
+    text-align: center;
+}
+
+
+/* Logo in Navbar */
+nav .logo {
+    width: 160px;
+    cursor: pointer;
+    display: block; /* Make the logo a block-level element for centering */
+    margin: 0 auto; /* Center the logo within its container */
+}
+
+/* Updated Styles for the Search Form */
+/* Form Container */
+form.d-flex {
+    margin-top: 10px; /* Adjust the margin as needed */
+    text-align: center; /* Center the form within its container */
+}
+
+/* Input Field */
+.form-control {
+    border: 1px solid #dc3545; /* Red border for the input field */
+}
+
+.form-control:focus {
+    border-color: #dc3545; /* Red border color when input is focused */
+}
+
+/* Search Button */
+.btn-outline-success {
+    background-color: #dc3545; /* Light red background for the button */
+    border-color: #dc3545; /* Red border for the button */
+    color: #ffffff; /* White text color for the button */
+}
+
+.btn-outline-success:hover {
+    background-color: #ff7f7f; /* Lighter red background on hover */
+    border-color: #ff7f7f; /* Lighter red border on hover */
+}
+
+.bg-loggin{
+    background-color: #380000;
+}
+.bg-reggister{
+    background-color: #380000;
+}

@@ -1,6 +1,5 @@
 @extends('layouts.app')
 
-@section('title', 'Edit Tournament')
 
 @section('contents')
     <div class="container">

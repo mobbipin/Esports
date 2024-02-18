@@ -1,7 +1,5 @@
 @extends('layouts.app')
   
-@section('title', 'Profile')
-  
 @section('contents')
     <h1 class="mb-0">Profile</h1>
     <hr />
@@ -11,7 +9,7 @@
         <div class="col-md-12 border-right">
             <div class="p-3 py-5">
                 <div class="d-flex justify-content-between align-items-center mb-3">
-                    <h4 class="text-right">Profile Settings</h4>
+                    <h4 class="text-right">USER INFORMATION</h4>
                 </div>
                 <div class="row" id="res"></div>
                 <div class="row mt-2">

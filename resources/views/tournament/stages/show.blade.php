@@ -1,7 +1,5 @@
 @extends('layouts.app')
 
-@section('title', 'Stage Details')
-
 @section('contents')
     <div class="container">
         <h1 class="mb-0">Stage Details</h1>

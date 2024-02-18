@@ -1,7 +1,5 @@
 @extends('layouts.app')
 
-@section('title', 'List of Teams')
-
 @section('contents')
     <div class="container">
         <h1 class="mb-0">List of Teams</h1>
